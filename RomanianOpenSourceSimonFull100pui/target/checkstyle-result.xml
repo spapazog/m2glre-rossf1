@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="5.5">
-<file name="/Users/steeepph/Dropbox/Work/2011-2012 - M2/UE8 - Ingénierie du Test et de l’Intégration/workspace/MoodleXmlApiImpl/src/main/java/universite/toulouse/moodlexmlapi/fsil/impl/App.java">
+<file name="/Users/steeepph/Dropbox/Work/2011-2012 - M2/UE8 - Ingénierie du Test et de l’Intégration/rossf1/RomanianOpenSourceSimonFull100pui/src/main/java/ups/m2glre/rossf1/App.java">
 <error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="9" column="1" severity="error" message="Les classes utilitaires ne doivent pas avoir de constructeur par défaut ou public." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
 <error line="10" column="5" severity="error" message="Commentaire javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>

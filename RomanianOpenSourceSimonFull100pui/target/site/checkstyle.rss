@@ -2,9 +2,9 @@
 
 <rss version="0.91">
   <channel>
-    <title>MoodleXmlApiImpl - Checkstyle report</title>
+    <title>RomanianOpenSourceSimonFull100pui - Checkstyle report</title>
     <link>http://maven.apache.org</link>
-    <description>MoodleXmlApiImpl - Checkstyle report</description>
+    <description>RomanianOpenSourceSimonFull100pui - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2012</copyright>
     <item>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#universite.toulouse.moodlexmlapi.fsil.impl.App.java">universite/toulouse/moodlexmlapi/fsil/impl/App.java</a>
+                  <a href="http://maven.apache.org/checkstyle.html#ups.m2glre.rossf1.App.java">ups/m2glre/rossf1/App.java</a>
                 </td>
                 <td>
                   0
