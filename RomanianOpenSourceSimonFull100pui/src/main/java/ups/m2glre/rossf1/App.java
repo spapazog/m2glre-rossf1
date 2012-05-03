@@ -7,6 +7,9 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionError;
  *
  */
 public class App {
+    /** Méthode main.
+     * @param args : Arguments
+     */
     public static void main(final String[] args) {
         System.out.println("Hello World!");
         QuestionError questionError = new QuestionError("type not supported",
