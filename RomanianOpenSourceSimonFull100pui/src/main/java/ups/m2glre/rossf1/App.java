@@ -4,11 +4,11 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionError;
 
 /**
  * Hello world!
- *
  */
 public class App {
-    /** Méthode main.
-     * @param args : Arguments
+    /**
+     * Methode main.
+     * @param args : argument du programme
      */
     public static void main(final String[] args) {
         System.out.println("Hello World!");
