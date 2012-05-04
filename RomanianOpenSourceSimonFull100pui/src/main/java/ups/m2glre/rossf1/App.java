@@ -15,5 +15,9 @@ public class App {
         QuestionError questionError = new QuestionError("type not supported",
                 "the question type is not supported");
         System.out.println(questionError.getDescription());
+
+        try {
+        } catch (Exception e) {
+        }
     }
 }
