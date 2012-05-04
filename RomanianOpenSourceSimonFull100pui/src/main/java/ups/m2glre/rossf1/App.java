@@ -16,6 +16,9 @@ public final class App {
                 "the question type is not supported");
         System.out.println(questionError.getDescription()); 
 
+        String aString = "bob";
+        aString.replace('b', 'p');
+
         try {
         } catch (Exception e) {
         }
