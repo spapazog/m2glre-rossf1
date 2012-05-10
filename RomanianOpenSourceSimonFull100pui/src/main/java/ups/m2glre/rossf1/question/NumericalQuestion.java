@@ -18,47 +18,74 @@ public class NumericalQuestion extends GenericQuestion  {
         return QuestionType.numerical;
     }
 
-    public String getName() {
+    /**
+     * @return le nom de la question
+     */
+    public final String getName() {
         // TODO Auto-generated method stub
         return null;
     }
 
-    public QuestionText getQuestionText() {
+    /**
+     * @return le texte de la question
+     */
+    public final QuestionText getQuestionText() {
         // TODO Auto-generated method stub
         return null;
     }
 
-    public String getGeneralFeedBack() {
+    /**
+     * @return le feedback de la question
+     */
+    public final String getGeneralFeedBack() {
         // TODO Auto-generated method stub
         return null;
     }
 
-    public Float getPenalty() {
+    /**
+     * @return la pénalité de la question
+     */
+    public final Float getPenalty() {
         // TODO Auto-generated method stub
         return null;
     }
 
-    public Float getDefaultGrade() {
+    /**
+     * @return le grade de la question
+     */
+    public final Float getDefaultGrade() {
         // TODO Auto-generated method stub
         return null;
     }
 
-    public Boolean isHidden() {
+    /**
+     * @return si la question est caché
+     */
+    public final Boolean isHidden() {
         // TODO Auto-generated method stub
         return null;
     }
 
-    public String getImageUrl() {
+    /**
+     * @return l'URL de l'image de la question
+     */
+    public final String getImageUrl() {
         // TODO Auto-generated method stub
         return null;
     }
 
-    public String getImageBase64() {
+    /**
+     * @return l'image de la question
+     */
+    public final String getImageBase64() {
         // TODO Auto-generated method stub
         return null;
     }
 
-    public List<QuestionError> getErrors() {
+    /**
+     * @return la liste d'erreur de la question
+     */
+    public final List<QuestionError> getErrors() {
         // TODO Auto-generated method stub
         return null;
     }
