@@ -2,7 +2,11 @@ package universite.toulouse.moodlexmlapi.core;
 
 public class InvalidStreamSizeException extends Exception {
 	
-	private Long maxSize ;
+	/**
+     * Serial.
+     */
+    private static final long serialVersionUID = 1L;
+    private Long maxSize ;
 	private Long streamSize ;
 	
 	/**
