@@ -1,4 +1,4 @@
-package ups.m2glre.rossf1.data;
+package ups.m2glre.rossf1;
 
 import java.util.List;
 
