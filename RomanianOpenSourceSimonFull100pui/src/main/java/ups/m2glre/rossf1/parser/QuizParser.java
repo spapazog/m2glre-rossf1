@@ -1,10 +1,10 @@
 package ups.m2glre.rossf1.parser;
 
 /**
- * QuizzParser.
+ * QuizParser.
  * @author steeepph
  *
  */
-public class QuizzParser {
+public class QuizParser {
 
 }

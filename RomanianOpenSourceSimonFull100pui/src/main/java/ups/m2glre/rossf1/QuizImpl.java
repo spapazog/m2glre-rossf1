@@ -8,7 +8,7 @@ import universite.toulouse.moodlexmlapi.core.data.Quiz;
 /**
  * QuizzImplementation
  */
-public class QuizzImplementation implements Quiz {
+public class QuizImpl implements Quiz {
 
     /**
      * @see universite.toulouse.moodlexmlapi.core.data.Quiz#getQuestionList()
