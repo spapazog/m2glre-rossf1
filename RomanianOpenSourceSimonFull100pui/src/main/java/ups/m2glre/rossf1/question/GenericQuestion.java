@@ -17,48 +17,48 @@ public abstract class GenericQuestion implements Question  {
      */
     public abstract QuestionType getQuestionType();
 
-    public String getName() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return le nom de la question
+     */
+    public abstract String getName();
 
-    public QuestionText getQuestionText() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return le texte de la question
+     */
+    public abstract QuestionText getQuestionText();
 
-    public String getGeneralFeedBack() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return le feedback de la question
+     */
+    public abstract String getGeneralFeedBack();
 
-    public Float getPenalty() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return la pénalité de la question
+     */
+    public abstract Float getPenalty();
 
-    public Float getDefaultGrade() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return le grade de la question
+     */
+    public abstract Float getDefaultGrade();
 
-    public Boolean isHidden() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return si la question est cachée
+     */
+    public abstract Boolean isHidden();
 
-    public String getImageUrl() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return l'URL de l'image de la question
+     */
+    public abstract String getImageUrl();
 
-    public String getImageBase64() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return l'image de la question
+     */
+    public abstract String getImageBase64();
 
-    public List<QuestionError> getErrors() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+    /**
+     * @return la liste des erreurs de la question
+     */
+    public abstract List<QuestionError> getErrors();
 }
