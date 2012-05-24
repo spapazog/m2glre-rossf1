@@ -2,6 +2,7 @@ package ups.m2glre.rossf1.parser;
 
 import org.jdom.Element;
 
+import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
 import universite.toulouse.moodlexmlapi.core.data.Question;
 import universite.toulouse.moodlexmlapi.core.data.QuestionText;
 import universite.toulouse.moodlexmlapi.core.data.QuestionTextFormat;
@@ -18,7 +19,7 @@ public abstract class QuestionParser {
     /**
      * Représentation d'une question
      */
-    private GenericQuestion question;
+    protected GenericQuestion question;
 
     /**
      * @param questionXML issue du XML
@@ -39,8 +40,9 @@ public abstract class QuestionParser {
     /**
      * Méthode de parsage d'une question spéciale à implémenter
      * @param questionXML issue du XML
+     * @throws InvalidQuizFormatException 
      */
-    public abstract void parseSpecializedQuestion(Element questionXML);
+    public abstract void parseSpecializedQuestion(Element questionXML) throws InvalidQuizFormatException;
 
     /**
      * Méthode de parsage des champs génériques
