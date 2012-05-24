@@ -8,12 +8,12 @@ public class QuestionParserFactory {
 
         QuestionType questionType = QuestionType.valueOf(questionCategory);  
         switch (questionType) {
+        case matching: return new MatchingQuestionParser();
             //case numerical : return new NumericalQuestionParser();
             /*todo: implement the other types when created
             description,
             essay,
             calculated,
-            matching,
             cloze,
             multichoice,
             shortanswer,

@@ -9,11 +9,11 @@ public class QuestionFactory {
         switch (questionType) {
             //case numerical : return new ();
             //case multichoice : return new MultichoiceQuestion();
+        case matching: return new MatchingQuestion();
             /*todo: implement the other types when created
             description,
             essay,
             calculated,
-            matching,
             cloze,
             shortanswer,
             truefalse,
