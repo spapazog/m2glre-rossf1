@@ -21,10 +21,16 @@ public class QuizParser {
         Iterator i = listQuestions.iterator();
 
         while (i.hasNext()) {
-           Element question = (Element) i.next();
+            Element questionXMLElement = (Element) i.next();
 
-           //Affichage du type de la question (GABRIEL A TOIIIIIII !)
-           System.out.println(question.getAttributeValue("category"));
-        }
+            String questionCategory = questionXMLElement.getAttributeValue("category");
+            QuestionParser questionParser;
+            try {
+                questionParser = QuestionFactory.getQuestionParser(questionCategory);
+                questionParser.parseQuestion(questionXMLElement);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+         }
     }
 }
