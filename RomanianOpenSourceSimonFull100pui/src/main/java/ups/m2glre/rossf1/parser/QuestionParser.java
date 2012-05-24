@@ -7,6 +7,7 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionText;
 import universite.toulouse.moodlexmlapi.core.data.QuestionTextFormat;
 import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 import ups.m2glre.rossf1.question.GenericQuestion;
+import ups.m2glre.rossf1.question.QuestionFactory;
 
 /**
  * QuestionParser.
@@ -22,9 +23,11 @@ public abstract class QuestionParser {
     /**
      * @param questionXML issue du XML
      * @return la question parsée
+     * @throws Exception question non gérée
      */
-    public final Question parseQuestion(final Element questionXML) {
-        question = new GenericQuestion();
+    public final Question parseQuestion(final Element questionXML)
+            throws Exception {
+        question = QuestionFactory.getQuestion(parseQuestionType(questionXML));
         parseQuestionType(questionXML);
         parseQuestionText(questionXML);
         parseGenericField(questionXML);
@@ -69,30 +72,10 @@ public abstract class QuestionParser {
     /**
      * Parse le type de la question
      * @param questionXML question a parser
+     * @return le type de la question
      */
-    private void parseQuestionType(final Element questionXML) {
-        String questionType = questionXML.getAttributeValue("type");
-
-        if (questionType.equals("category"))
-            question.setQuestionType(QuestionType.category);
-        else if (questionType.equals("calculated"))
-            question.setQuestionType(QuestionType.calculated);
-        else if (questionType.equals("cloze"))
-            question.setQuestionType(QuestionType.cloze);
-        else if (questionType.equals("description"))
-            question.setQuestionType(QuestionType.description);
-        else if (questionType.equals("essay"))
-            question.setQuestionType(QuestionType.essay);
-        else if (questionType.equals("matching"))
-            question.setQuestionType(QuestionType.matching);
-        else if (questionType.equals("multichoice"))
-            question.setQuestionType(QuestionType.multichoice);
-        else if (questionType.equals("numerical"))
-            question.setQuestionType(QuestionType.numerical);
-        else if (questionType.equals("shortanswer"))
-            question.setQuestionType(QuestionType.shortanswer);
-        else if (questionType.equals("truefalse"))
-            question.setQuestionType(QuestionType.truefalse);
+    private QuestionType parseQuestionType(final Element questionXML) {
+        return QuestionType.valueOf(questionXML.getAttributeValue("type"));
     }
 
     /**
