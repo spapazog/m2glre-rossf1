@@ -11,7 +11,9 @@
 <module name="Checker">
   <property name="severity" value="warning"/>
   <module name="TreeWalker">
+    <property name="severity" value="ignore"/>
     <property name="cacheFile" value="${checkstyle.cache.file}"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
     <module name="JavadocMethod"/>
     <module name="JavadocType"/>
     <module name="JavadocVariable"/>
@@ -48,7 +50,10 @@
     <module name="AvoidNestedBlocks"/>
     <module name="EmptyBlock"/>
     <module name="LeftCurly"/>
-    <module name="NeedBraces"/>
+    <module name="NeedBraces">
+    	<property name="tokens" value=""/>
+	</module>
+
     <module name="RightCurly"/>
     <module name="AvoidInlineConditionals"/>
     <module name="DoubleCheckedLocking"/>
@@ -70,6 +75,7 @@
     <module name="FinalParameters"/>
     <module name="TodoComment"/>
     <module name="UpperEll"/>
+    <module name="JavadocVariable"/>
   </module>
   <module name="JavadocPackage">
     <property name="severity" value="ignore"/>
@@ -78,11 +84,13 @@
   <module name="NewlineAtEndOfFile"/>
   <module name="Translation"/>
   <module name="FileLength"/>
-  <module name="FileTabCharacter">
-    <property name="eachLine" value="true"/>
-  </module>
+  <module name="FileTabCharacter"/>
   <module name="RegexpSingleline">
     <property name="format" value="\s+$"/>
     <property name="message" value="Line has trailing spaces."/>
+  </module>
+  <module name="FileTabCharacter">
+    <property name="severity" value="ignore"/>
+   
   </module>
 </module>

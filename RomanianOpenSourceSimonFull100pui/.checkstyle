@@ -5,8 +5,10 @@
     <property name="checkstyle.cache.file" value="false"/>
     <additional-data name="protect-config-file" value="false"/>
   </local-check-config>
-  <fileset name="checkstyle-rossf1" enabled="true" check-config-name="checkstyle" local="true">
+  <local-check-config name="CheckstylePerso" location="checkstyle-rossf1.xml" type="project" description="">
+    <additional-data name="protect-config-file" value="false"/>
+  </local-check-config>
+  <fileset name="checkPerso" enabled="true" check-config-name="checkstyle" local="true">
     <file-match-pattern match-pattern=".java$" include-pattern="true"/>
-    <file-match-pattern match-pattern="src/test/java" include-pattern="false"/>
   </fileset>
 </fileset-config>
