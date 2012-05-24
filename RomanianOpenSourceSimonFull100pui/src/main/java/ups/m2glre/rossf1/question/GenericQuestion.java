@@ -10,7 +10,7 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 /**
  * @author steeepph
  */
-public class GenericQuestion implements Question  {
+public abstract class GenericQuestion implements Question  {
 
     private String name;
     private QuestionText questionText;

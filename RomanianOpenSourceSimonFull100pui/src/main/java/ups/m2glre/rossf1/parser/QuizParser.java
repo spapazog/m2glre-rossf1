@@ -26,7 +26,7 @@ public class QuizParser {
             String questionCategory = questionXMLElement.getAttributeValue("category");
             QuestionParser questionParser;
             try {
-                questionParser = QuestionFactory.getQuestionParser(questionCategory);
+                questionParser = QuestionParserFactory.getQuestionParser(questionCategory);
                 questionParser.parseQuestion(questionXMLElement);
             } catch (Exception e) {
                 e.printStackTrace();
