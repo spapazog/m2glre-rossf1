@@ -1,9 +1,8 @@
 package ups.m2glre.rossf1.parser;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
-import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 
@@ -14,18 +13,23 @@ import org.jdom.input.SAXBuilder;
  */
 public class Parser {
     private org.jdom.Document document;
-    private Element quizz;
 
     /**
      * Constructeur de la classe parseur
-     * @param uri chemin du fichier
-     * @throws JDOMException si erreur JDOM
-     * @throws IOException si erreur IO
+     * @param is fichier
      */
-    public Parser(final String uri) throws JDOMException, IOException {
-       SAXBuilder sxb = new SAXBuilder();
-       document = sxb.build(new File("Exercice2.xml"));
-       
-       new QuizParser(document.getRootElement());
+    public Parser(final InputStream is) {
+       try {
+           //Construction du document à partir de is
+           document = new SAXBuilder().build(is);
+
+           //Création du parseur
+           new QuizParser(document.getRootElement());
+
+       } catch (JDOMException e) {
+           e.printStackTrace();
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
     }
 }
