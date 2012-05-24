@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <question type="numerical">
+        <name>
+            <text>HTTP 1er protocole de l'Internet</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>En quelle année HTTP devient le premier protocole de l'Internet ?</text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1</defaultgrade>
+        <penalty>0.1</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>0</shuffleanswers>
+        <answer fraction="100">
+            <text>1996</text>
+            <tolerance>0</tolerance>
+            <feedback>
+                <text>yo</text>
+            </feedback>
+        </answer>
+        <units>
+                  <unit>
+                    <multiplier>1</multiplier>
+                    <unit_name>annee</unit_name>
+                  </unit>
+                </units>
+    </question>
+</quiz>
