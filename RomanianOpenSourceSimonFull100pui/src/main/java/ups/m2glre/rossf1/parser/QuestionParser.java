@@ -18,7 +18,7 @@ public abstract class QuestionParser {
     /**
      * Représentation d'une question
      */
-    private GenericQuestion question;
+    protected GenericQuestion question;
 
     /**
      * @param questionXML issue du XML
@@ -27,7 +27,7 @@ public abstract class QuestionParser {
      */
     public final Question parseQuestion(final Element questionXML)
             throws Exception {
-        question = QuestionFactory.getQuestion(parseQuestionType(questionXML));
+        question = QuestionFactory.getQuestion(getQuestionType(questionXML));
         parseQuestionType(questionXML);
         parseQuestionText(questionXML);
         parseGenericField(questionXML);
@@ -70,12 +70,21 @@ public abstract class QuestionParser {
     }
 
     /**
+     * Récupère le type de la question
+     * @param questionXML question a parser
+     * @return le type de la question
+     */
+    private QuestionType getQuestionType(final Element questionXML) {
+        return QuestionType.valueOf(questionXML.getAttributeValue("type"));
+    }
+    /**
      * Parse le type de la question
      * @param questionXML question a parser
      * @return le type de la question
      */
-    private QuestionType parseQuestionType(final Element questionXML) {
-        return QuestionType.valueOf(questionXML.getAttributeValue("type"));
+    private void parseQuestionType(final Element questionXML) {
+        question.setQuestionType(QuestionType.valueOf(
+                questionXML.getAttributeValue("type")));
     }
 
     /**

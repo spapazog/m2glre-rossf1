@@ -7,7 +7,7 @@ public class QuestionFactory {
     public static GenericQuestion getQuestion(QuestionType questionType) 
             throws Exception {
         switch (questionType) {
-            //case numerical : return new ();
+            case numerical : return new NumericalQuestion();
             //case multichoice : return new MultichoiceQuestion();
             /*todo: implement the other types when created
             description,
