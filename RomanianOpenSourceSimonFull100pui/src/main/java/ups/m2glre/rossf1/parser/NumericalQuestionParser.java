@@ -29,8 +29,7 @@ public class NumericalQuestionParser extends QuestionParser {
             q.setAnswerUnitName(questionXML.getChild("units").getChild("unit").
                     getChild("unit_name").getValue());
             //Parse la answer shuffle
-            q.setAnswerShuffle(Integer.valueOf(
-                    questionXML.getChild("shuffleanswers").getValue()) == 1);
+            q.setAnswerShuffle(parseAnswerShuffle(questionXML));
           //Parse le feedback text
             q.setFeedbackText(questionXML.getChild("answer").getChild("feedback").
                     getChild("text").getValue());

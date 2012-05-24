@@ -40,9 +40,10 @@ public abstract class QuestionParser {
     /**
      * Méthode de parsage d'une question spéciale à implémenter
      * @param questionXML issue du XML
-     * @throws InvalidQuizFormatException 
+     * @throws InvalidQuizFormatException si le fichier n'est pas au bon format
      */
-    public abstract void parseSpecializedQuestion(Element questionXML) throws InvalidQuizFormatException;
+    public abstract void parseSpecializedQuestion(Element questionXML)
+            throws InvalidQuizFormatException;
 
     /**
      * Méthode de parsage des champs génériques
@@ -97,16 +98,6 @@ public abstract class QuestionParser {
         //Parsing du format de texte
         String questionTextFormat = questionXML.
                 getChild("questiontext").getAttributeValue("format");
-        QuestionTextFormat qtf;
-
-        if (questionTextFormat.equals("html"))
-            qtf = QuestionTextFormat.html;
-        else if (questionTextFormat.equals("moodle_auto_format"))
-            qtf = QuestionTextFormat.moodle_auto_format;
-        else if (questionTextFormat.equals("markdown"))
-            qtf = QuestionTextFormat.markdown;
-        else
-            qtf = QuestionTextFormat.plain_text;
 
         //Parsing du texte
         String questionText = questionXML.
@@ -114,6 +105,17 @@ public abstract class QuestionParser {
                 getChild("text").getValue();
 
         //Affectation du texte de la question
-        question.setQuestionText(new QuestionText(questionText, qtf));
+        question.setQuestionText(new QuestionText(questionText, 
+                QuestionTextFormat.valueOf(questionTextFormat)));
+    }
+
+    /**
+     * Méthode redondante dans plusieurs type de question mais pas générique
+     * @param questionXML la question à parser
+     * @return
+     */
+    public boolean parseAnswerShuffle(final Element questionXML) {
+        return Integer.valueOf(questionXML.getChild("shuffleanswers")
+                .getValue()) == 1;
     }
 }

@@ -22,12 +22,8 @@ public class GenericQuestionParserTest extends TestCase {
 
         try {
             document = new SAXBuilder().build(new File("src/test/TestNumericalQuestion.xml"));
-            assertEquals(document.getRootElement().getName(), "quiz");
-
             numericalQuestion = (NumericalQuestion) numericalQuestionParser.
-                    parseQuestion(
-                            document.getRootElement().getChild("question"));
-            assertNotNull(numericalQuestion);
+                    parseQuestion(document.getRootElement().getChild("question"));
         } catch (Exception e) {}
     }
 

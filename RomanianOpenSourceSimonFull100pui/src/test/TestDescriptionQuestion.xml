@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <question type="description">
+        <name>
+            <text>Consigne dispositif électronique</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>Pas de calculatrice !</text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0</defaultgrade>
+        <penalty>0</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>0</shuffleanswers>
+    </question>
+</quiz>

@@ -4,20 +4,20 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 
 public class QuestionFactory {
 
-    public static GenericQuestion getQuestion(QuestionType questionType) 
+    public static GenericQuestion getQuestion(QuestionType questionType)
             throws Exception {
         switch (questionType) {
-            case numerical : return new NumericalQuestion();
-            //case multichoice : return new MultichoiceQuestion();
-        case matching: return new MatchingQuestion();
-            /*todo: implement the other types when created
-            description,
-            essay,
-            calculated,
-            cloze,
-            shortanswer,
-            truefalse,
-            category*/
+            case matching: return new MatchingQuestion();
+            case numerical: return new NumericalQuestion();
+            case description: return new DescriptionQuestion();
+
+            //SIMON: case multichoice: return new NumericalQuestion();
+            //GABRIEL: case essay: return new EssayQuestion();
+            //case calculated: return new NumericalQuestion();
+            //case cloze: return new NumericalQuestion();
+            //case shortanswer: return new NumericalQuestion();
+            //case truefalse: return new NumericalQuestion();
+            //case category: return new NumericalQuestion();
         }
         throw new Exception("Not implemented question type");
     }
