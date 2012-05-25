@@ -24,7 +24,11 @@ public class GenericQuestionParserTest extends TestCase {
             document = new SAXBuilder().build(new File("src/test/TestNumericalQuestion.xml"));
             numericalQuestion = (NumericalQuestion) numericalQuestionParser.
                     parseQuestion(document.getRootElement().getChild("question"));
-        } catch (Exception e) {}
+        } catch (Exception e) {
+            fail();
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     public void testQuestionName() {

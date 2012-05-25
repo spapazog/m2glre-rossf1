@@ -26,9 +26,9 @@ public class EssayQuestionParserTest extends TestCase {
             assertEquals("Feedback test", essayQuestion.getAnswerText());
 
         } catch (Exception e) {
+            fail();
             System.out.println(e.getMessage());
             e.printStackTrace();
-            fail();
         }
 
     }

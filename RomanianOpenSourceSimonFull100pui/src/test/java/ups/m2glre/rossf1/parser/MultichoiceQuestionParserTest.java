@@ -25,7 +25,11 @@ public class MultichoiceQuestionParserTest extends TestCase{
             multichoiceQuestion = (MultichoiceQuestion) multichoiceQuestionParser.
                     parseQuestion(document.getRootElement().getChild("question"));
             
-        } catch (Exception e) {}
+        } catch (Exception e) {
+            fail();
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     public void testAnswer() {

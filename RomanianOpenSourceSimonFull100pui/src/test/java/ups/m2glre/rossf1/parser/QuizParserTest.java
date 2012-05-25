@@ -26,6 +26,7 @@ public class QuizParserTest extends TestCase {
             q = (QuizImpl) qp.parseQuiz(document.getRootElement());
             iqi = new ImportedQuizImpl(q);
         } catch (Exception e) {
+            fail();
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
