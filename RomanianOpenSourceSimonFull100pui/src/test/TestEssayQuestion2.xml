@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>   
+    <question type="essay">
+        <name>
+            <text>Question ouverte2</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>Un text de question</text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1</defaultgrade>
+        <penalty>1</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>1</shuffleanswers>
+        <answer fraction="2">
+            <feedback>
+                <text>"Good job"</text>
+            </feedback>
+        </answer>
+    </question>
+</quiz>
