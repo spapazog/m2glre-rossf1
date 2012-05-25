@@ -42,7 +42,7 @@ public final class MultichoiceQuestionParser extends QuestionParser{
 
         MultichoiceQuestion quest = (MultichoiceQuestion) question;
 
-    	try {
+        try {
             //Parse la fraction de answer
             quest.setAnswerFraction(Integer.valueOf(questionXML.
                     getChild(MoodleXML.TAG_ANSWER).
@@ -50,7 +50,7 @@ public final class MultichoiceQuestionParser extends QuestionParser{
             //Parse le texte de answer
             quest.setAnswerText(questionXML.
                     getChild(MoodleXML.TAG_ANSWER).
-            		getChild(MoodleXML.TAG_TEXT).getValue());
+                    getChild(MoodleXML.TAG_TEXT).getValue());
             //Parse le answer shuffle
             quest.setAnswerShuffle(parseAnswerShuffle(questionXML));
             //Parse le texte de feedback de answer
@@ -72,6 +72,7 @@ public final class MultichoiceQuestionParser extends QuestionParser{
                     getChild(MoodleXML.TAG_TEXT).getValue());
             quest.setAnswernumbering(questionXML.
                     getChild(MoodleXML.TAG_ANSWERNUMBERING).getValue());
+
 
         } catch (Exception e) {
             throw new InvalidQuizFormatException(e.getCause());

@@ -5,7 +5,7 @@ public class EssayQuestion extends GenericQuestion {
     private boolean answerShuffle;
     private int answerFraction;
     private int answerValue;
-    
+
     /**
      * @return the answerShuffle
      */
