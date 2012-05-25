@@ -19,6 +19,8 @@ public abstract class GenericQuestion implements Question  {
     private Float penalty;
     private Float grade;
     private QuestionType questionType;
+    private String imageUrl;
+    private String imageBase64;
 
     /**
      * @param questionType the questionType to set
@@ -60,6 +62,20 @@ public abstract class GenericQuestion implements Question  {
      */
     public final void setPenalty(final Float penalty) {
         this.penalty = penalty;
+    }
+
+    /**
+     * @param imageUrl the image url to set
+     */
+    public final void setImgUrl(final String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    /**
+     * @param imageUrl the image url to set
+     */
+    public final void setImg64(final String image64) {
+        this.imageBase64 = image64;
     }
 
     /**
@@ -122,14 +138,14 @@ public abstract class GenericQuestion implements Question  {
      * @return l'URL de l'image de la question
      */
     public final String getImageUrl() {
-        return "";
+        return imageUrl;
     }
 
     /**
      * @return l'image de la question
      */
     public final String getImageBase64() {
-        return "";
+        return imageBase64;
     }
 
     /**

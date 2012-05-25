@@ -50,26 +50,38 @@ public abstract class QuestionParser {
      * @param questionXML issue du XML
      */
     public final void parseGenericField(final Element questionXML) {
+        //Pour les "questions" de type catégorie
+        if (question.getQuestionType() == QuestionType.category)
+            return;     //Uniquement texte/categorie dedans
+
         //Parsage du nom
         question.setName(
                 questionXML.getChild("name").getChild("text").getValue());
 
         //Parasage de question caché
-        question.setQuestionHidden(
-                Integer.valueOf(questionXML
+        if (questionXML.getChild("hidden") != null)
+            question.setQuestionHidden(Integer.valueOf(questionXML
                         .getChild("hidden").getValue()) == 1);
+        else
+            question.setQuestionHidden(false);
 
         //Parasage de feedback
         question.setFeedback(questionXML.
                 getChild("generalfeedback").getChild("text").getValue());
 
         //Parasage de pénalité
-        question.setPenalty(
-                Float.valueOf(questionXML.getChild("penalty").getValue()));
+        if (questionXML.getChild("penalty") != null)
+            question.setPenalty(Float.valueOf(questionXML.
+                    getChild("penalty").getValue()));
+        else
+            question.setPenalty(0f);
 
         //Parsage de grade
-        question.setGrade(
-                Float.valueOf(questionXML.getChild("defaultgrade").getValue()));
+        if (questionXML.getChild("defaultgrade") != null)
+            question.setGrade(Float.valueOf(questionXML.
+                    getChild("defaultgrade").getValue()));
+        else
+            question.setGrade(1f);
     }
 
     /**
@@ -95,9 +107,16 @@ public abstract class QuestionParser {
      * @param questionXML question a parser
      */
     private void parseQuestionText(final Element questionXML) {
+        //Pour les "questions" de type catégorie
+        if (question.getQuestionType() == QuestionType.category)
+            return;     //Uniquement texte/categorie dedans
+
         //Parsing du format de texte
-        String questionTextFormat = questionXML.
-                getChild("questiontext").getAttributeValue("format");
+        String questionTextFormat = questionXML.getChild("questiontext").
+                getAttributeValue("format");
+        //Dans le cas où le format n'est pas renseigné
+        if (questionTextFormat == null)
+            questionTextFormat = "moodle_auto_format";
 
         //Parsing du texte
         String questionText = questionXML.
@@ -105,7 +124,7 @@ public abstract class QuestionParser {
                 getChild("text").getValue();
 
         //Affectation du texte de la question
-        question.setQuestionText(new QuestionText(questionText, 
+        question.setQuestionText(new QuestionText(questionText,
                 QuestionTextFormat.valueOf(questionTextFormat)));
     }
 

@@ -11,14 +11,14 @@ public class QuestionParserFactory {
             case matching: return new MatchingQuestionParser();
             case numerical: return new NumericalQuestionParser();
             case description: return new DescriptionQuestionParser();
+            case cloze: return new ClozeQuestionParser();
+            case category: return new CategoryQuestionParser();
 
             //SIMON: case multichoice: return new NumericalQuestionParser();
             //GABRIEL: case essay: return new EssayQuestionParser();
             //case calculated: return new NumericalQuestionParser();
-            //case cloze: return new NumericalQuestionParser();
             //case shortanswer: return new NumericalQuestionParser();
             //case truefalse: return new NumericalQuestionParser();
-            //case category: return new NumericalQuestionParser();
         }
         throw new Exception("Not implemented question type");
     }
