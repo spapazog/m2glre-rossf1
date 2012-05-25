@@ -1,4 +1,4 @@
-package ups.m2glre.rossf1;
+package ups.m2glre.rossf1.quiz;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -14,7 +14,7 @@ import universite.toulouse.moodlexmlapi.core.data.Quiz;
  * @author steeepph
  *
  */
-public class QuizService implements QuizImportExportService {
+public class QuizServiceImpl implements QuizImportExportService {
 
     /**
      * Importation d'un quizz
@@ -26,6 +26,11 @@ public class QuizService implements QuizImportExportService {
      */
     public final ImportedQuiz importQuiz(final InputStream is)
             throws InvalidQuizFormatException, InvalidStreamSizeException {
+        /**
+         * Faire un QuizParser
+         * Récupérer le quizz
+         * Le transformer en ImportedQuiz
+         */
         return null;
     }
 

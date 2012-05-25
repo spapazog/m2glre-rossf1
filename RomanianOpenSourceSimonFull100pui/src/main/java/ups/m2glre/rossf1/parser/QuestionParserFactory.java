@@ -1,13 +1,15 @@
 package ups.m2glre.rossf1.parser;
 
+import org.jdom.Element;
+
 import universite.toulouse.moodlexmlapi.core.data.QuestionType;
+import ups.m2glre.rossf1.utils.MoodleXML;
 
 public class QuestionParserFactory {
-    public static QuestionParser getQuestionParser(String questionCategory)
+    public static QuestionParser getQuestionParser(Element questionXML)
         throws Exception {
 
-        QuestionType questionType = QuestionType.valueOf(questionCategory);
-        switch (questionType) {
+        switch (getQuestionType(questionXML)) {
             case matching: return new MatchingQuestionParser();
             case numerical: return new NumericalQuestionParser();
             case description: return new DescriptionQuestionParser();
@@ -22,4 +24,13 @@ public class QuestionParserFactory {
         throw new Exception("Not implemented question type");
     }
 
+    /**
+     * Récupère le type de la question
+     * @param questionXML question a parser
+     * @return le type de la question
+     */
+    private static QuestionType getQuestionType(final Element questionXML) {
+        return QuestionType.valueOf(questionXML.
+                getAttributeValue(MoodleXML.TAG_TYPE));
+    }
 }
