@@ -17,7 +17,7 @@ public class EssayQuestionParser extends QuestionParser {
                     questionXML.getChild("answer").getAttributeValue("fraction")));
             //Parse la valeur
             q.setAnswerValue(Integer.valueOf(
-                    questionXML.getChild("answer").getChild("text").getValue()));
+                    questionXML.getChild("answer").getChild("feedback").getChild("text").getValue()));
             //Parse la answer shuffle
             q.setAnswerShuffle(parseAnswerShuffle(questionXML));
         } catch (Exception e) {
