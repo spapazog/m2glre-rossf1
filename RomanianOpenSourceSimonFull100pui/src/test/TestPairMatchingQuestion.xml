@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+	 <question type="matching">
+        <name>
+            <text>Serveur d'application / éditeurs</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>Relier les serveurs d'applications avec les bons éditeurs
+            </text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1</defaultgrade>
+        <penalty>0.1</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>1</shuffleanswers>
+        <subquestion>
+            <text>JBOSS</text>
+            <answer>
+                <text>Redhat</text>
+            </answer>
+        </subquestion>
+         <subquestion>
+            <text>Websphere</text>
+            <answer>
+                <text>IBM</text>
+            </answer>
+        </subquestion> 
+        
+    </question>
+
+</quiz>
