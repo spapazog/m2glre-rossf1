@@ -8,7 +8,6 @@ import junit.framework.TestCase;
 import org.jdom.Document;
 import org.jdom.input.SAXBuilder;
 import ups.m2glre.rossf1.question.MatchingQuestion;
-import ups.m2glre.rossf1.question.NumericalQuestion;
 
 public class MatchingQuestionParserTest extends TestCase {
         private MatchingQuestionParser matchingQuestionParser;
@@ -36,7 +35,7 @@ public class MatchingQuestionParserTest extends TestCase {
 
                 if (key.equals("JBOSS")) {
                     assertEquals("JBOSS",key);
-                    assertEquals("IBM",subQuestions.get(key));
+                    assertEquals("Redhat",subQuestions.get(key));
                 }
                 else if (key.equals("Websphere")) {
                     assertEquals("Websphere",key);

@@ -1,5 +1,8 @@
 package ups.m2glre.rossf1.parser;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.jdom.Element;
 
 import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
@@ -27,9 +30,14 @@ public class MatchingQuestionParser extends QuestionParser  {
 
         // browse subquestions
         try {
-            Element subQuestion;
-            while ((subQuestion = questionElement.getChild(MoodleXML.TAG_SUBQUESTION)) != null)
-                parseSubQuestion(subQuestion);
+
+            List listQuestions = questionElement.getChildren(MoodleXML.TAG_SUBQUESTION);
+            Iterator i = listQuestions.iterator();
+
+            while (i.hasNext()) {
+                Element subQuestionXML = (Element) i.next();
+                parseSubQuestion(subQuestionXML);
+            }
 
             Element suffleElement = questionElement.getChild(MoodleXML.TAG_SUFFLE);
             if (suffleElement == null)
@@ -51,13 +59,22 @@ public class MatchingQuestionParser extends QuestionParser  {
         if (textElement == null)
             throw new Throwable(MoodleXML.TAG_SUBQUESTION +
                     " node doesn't contain" + MoodleXML.TAG_TEXT + "element.");
+
         Element answerElement = subQuestionElement.
                 getChild(MoodleXML.TAG_SUBQUESTION_ANSWER);
         if (answerElement == null)
             throw new Throwable(MoodleXML.TAG_SUBQUESTION +
                     " node doesn't contain"+ MoodleXML.TAG_SUBQUESTION_ANSWER +
                     "element.");
+
+        Element answerTextElement = answerElement.getChild(MoodleXML.TAG_TEXT);
+        if (answerTextElement == null) {
+            throw new Throwable(MoodleXML.TAG_SUBQUESTION +
+                    " node doesn't contain"+ MoodleXML.TAG_TEXT +
+                    "element.");
+        }
+
         matchingQuestion.addSubquestion(textElement.getText(),
-                answerElement.getText());
+                answerTextElement.getText());
     }
 }
