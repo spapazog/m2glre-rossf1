@@ -6,6 +6,8 @@ import java.io.InputStream;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 
+import universite.toulouse.moodlexmlapi.core.data.Quiz;
+
 /**
  * Classe Parseur général
  * @author steeepph
@@ -31,5 +33,12 @@ public class Parser {
        } catch (IOException e) {
            e.printStackTrace();
        }
+    }
+
+    /**
+     * Parse le quiz
+     */
+    public Quiz parseQuiz() {
+        return new QuizParser().parseQuiz(document.getRootElement());
     }
 }
