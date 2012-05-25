@@ -8,6 +8,7 @@ import universite.toulouse.moodlexmlapi.core.InvalidStreamSizeException;
 import universite.toulouse.moodlexmlapi.core.QuizImportExportService;
 import universite.toulouse.moodlexmlapi.core.data.ImportedQuiz;
 import universite.toulouse.moodlexmlapi.core.data.Quiz;
+import ups.m2glre.rossf1.parser.Parser;
 
 /**
  * Service d'import/export de Quizz moodle
@@ -26,12 +27,7 @@ public class QuizServiceImpl implements QuizImportExportService {
      */
     public final ImportedQuiz importQuiz(final InputStream is)
             throws InvalidQuizFormatException, InvalidStreamSizeException {
-        /**
-         * Faire un QuizParser
-         * Récupérer le quizz
-         * Le transformer en ImportedQuiz
-         */
-        return null;
+        return new ImportedQuizImpl(new Parser(is).parseQuiz());
     }
 
     /**

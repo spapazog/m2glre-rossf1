@@ -24,6 +24,7 @@ public class ClozeQuestionParserTest extends TestCase {
             ClozeQuestion = (ClozeQuestion) ClozeQuestionParser.
                     parseQuestion(document.getRootElement().getChild("question"));
         } catch (Exception e) {
+            fail();
             System.out.println(e.getMessage());
             e.printStackTrace();
         }

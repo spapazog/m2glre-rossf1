@@ -24,6 +24,7 @@ public class CategoryQuestionParserTest extends TestCase {
             categoryQuestion = (CategoryQuestion) categoryQuestionParser.
                     parseQuestion(document.getRootElement().getChild("question"));
         } catch (Exception e) {
+            fail();
             System.out.println(e.getMessage());
             e.printStackTrace();
         }

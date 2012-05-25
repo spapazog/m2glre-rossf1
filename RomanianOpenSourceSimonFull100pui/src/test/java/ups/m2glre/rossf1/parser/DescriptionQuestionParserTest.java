@@ -23,7 +23,11 @@ public class DescriptionQuestionParserTest extends TestCase {
             document = new SAXBuilder().build(new File("src/test/TestDescriptionQuestion.xml"));
             descriptionQuestion = (DescriptionQuestion) descriptionQuestionParser.
                     parseQuestion(document.getRootElement().getChild("question"));
-        } catch (Exception e) {}
+        } catch (Exception e) {
+            fail();
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     public void testQuestionName() {

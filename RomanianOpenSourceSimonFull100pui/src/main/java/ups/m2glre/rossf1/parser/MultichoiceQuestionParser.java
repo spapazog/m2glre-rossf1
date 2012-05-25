@@ -59,8 +59,8 @@ public final class MultichoiceQuestionParser extends QuestionParser{
                     getChild(MoodleXML.TAG_FEEDBACK).
                     getChild(MoodleXML.TAG_TEXT).getValue());
             //Parse le single
-            quest.setSingle(Integer.valueOf(questionXML.
-                    getChild(MoodleXML.TAG_SINGLE).getValue()) == 1);
+            quest.setSingle(questionXML.
+                    getChild(MoodleXML.TAG_SINGLE).getValue() == "true");
             quest.setCorrectfeedbackText(questionXML.
                     getChild(MoodleXML.TAG_CORRECTFB).
                     getChild(MoodleXML.TAG_TEXT).getValue());
