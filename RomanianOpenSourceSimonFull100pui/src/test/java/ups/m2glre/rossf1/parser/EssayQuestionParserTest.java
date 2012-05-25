@@ -47,10 +47,10 @@ public class EssayQuestionParserTest extends TestCase {
 
 
     private void checkAnswerFraction(EssayQuestion essayQuestion) {
-        assertEquals(0, essayQuestion.getAnswerFraction());
+        assertEquals(2, essayQuestion.getAnswerFraction());
     }
 
     private void checkFeedbackText(EssayQuestion essayQuestion) {
-        assertEquals("Feedback test", essayQuestion.getAnswerValue());
+        assertEquals("Good job", essayQuestion.getAnswerValue());
     }
 }
