@@ -13,9 +13,8 @@ public class QuestionParserFactory {
             case description: return new DescriptionQuestionParser();
             case cloze: return new ClozeQuestionParser();
             case category: return new CategoryQuestionParser();
-
-            //SIMON: case multichoice: return new NumericalQuestionParser();
             case essay: return new EssayQuestionParser();
+            case multichoice: return new NumericalQuestionParser();
             //case calculated: return new NumericalQuestionParser();
             //case shortanswer: return new NumericalQuestionParser();
             //case truefalse: return new NumericalQuestionParser();
