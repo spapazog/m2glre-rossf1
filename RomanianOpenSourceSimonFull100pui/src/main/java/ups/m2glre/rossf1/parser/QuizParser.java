@@ -8,6 +8,7 @@ import org.jdom.Element;
 import universite.toulouse.moodlexmlapi.core.data.Question;
 import universite.toulouse.moodlexmlapi.core.data.Quiz;
 import ups.m2glre.rossf1.quiz.QuizImpl;
+import ups.m2glre.rossf1.utils.MoodleXML;
 
 /**
  * QuizParser.
@@ -25,7 +26,7 @@ public class QuizParser {
         QuizImpl quiz = new QuizImpl();
 
         //Création de la liste de questions
-        List listQuestions = quizRoot.getChildren("question");
+        List listQuestions = quizRoot.getChildren(MoodleXML.TAG_QUESTION);
         Iterator i = listQuestions.iterator();
 
         while (i.hasNext()) {

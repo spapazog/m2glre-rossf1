@@ -4,6 +4,7 @@ import org.jdom.Element;
 
 import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
 import ups.m2glre.rossf1.question.EssayQuestion;
+import ups.m2glre.rossf1.utils.MoodleXML;
 
 public class EssayQuestionParser extends QuestionParser {
 
@@ -14,10 +15,13 @@ public class EssayQuestionParser extends QuestionParser {
         try {
           //Parse la fraction
             q.setAnswerFraction(Integer.valueOf(
-                    questionXML.getChild("answer").getAttributeValue("fraction")));
+                    questionXML.getChild(MoodleXML.TAG_ANSWER).
+                    getAttributeValue(MoodleXML.TAG_FRACTION)));
             //Parse la valeur
             q.setAnswerValue(Integer.valueOf(
-                    questionXML.getChild("answer").getChild("feedback").getChild("text").getValue()));
+                    questionXML.getChild(MoodleXML.TAG_ANSWER).
+                    getChild(MoodleXML.TAG_FEEDBACK).
+                    getChild(MoodleXML.TAG_TEXT).getValue()));
             //Parse la answer shuffle
             q.setAnswerShuffle(parseAnswerShuffle(questionXML));
         } catch (Exception e) {

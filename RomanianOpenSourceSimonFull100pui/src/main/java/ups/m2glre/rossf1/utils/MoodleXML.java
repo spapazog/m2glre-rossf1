@@ -30,4 +30,9 @@ public class MoodleXML {
     public static final String TAG_QUESTIONTEXT = "questiontext";
     public static final String TAG_FORMAT = "format";
     public static final String TAG_TYPE = "type";
+    public static final String TAG_ANSWERNUMBERING = "answernumbering";
+    public static final String TAG_INCORRECTFB = "incorrectfeedback";
+    public static final String TAG_PARTCORRECTFB = "partiallycorrectfeedback";
+    public static final String TAG_CORRECTFB = "correctfeedback";
+    public static final String TAG_SINGLE = "single";
 }

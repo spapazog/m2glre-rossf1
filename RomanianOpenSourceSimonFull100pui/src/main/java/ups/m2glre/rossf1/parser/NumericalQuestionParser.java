@@ -36,7 +36,7 @@ public class NumericalQuestionParser extends QuestionParser {
                     getChild(MoodleXML.TAG_UNIT_NAME).getValue());
             //Parse la answer shuffle
             q.setAnswerShuffle(parseAnswerShuffle(questionXML));
-          //Parse le feedback text
+            //Parse le feedback text
             q.setFeedbackText(questionXML.getChild(MoodleXML.TAG_ANSWER).
                     getChild(MoodleXML.TAG_FEEDBACK).
                     getChild(MoodleXML.TAG_TEXT).getValue());
