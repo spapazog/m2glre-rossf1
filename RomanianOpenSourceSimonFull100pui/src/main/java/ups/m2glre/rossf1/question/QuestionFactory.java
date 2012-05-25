@@ -13,7 +13,7 @@ public class QuestionFactory {
             case cloze: return new ClozeQuestion();
             case category: return new CategoryQuestion();
             case essay: return new EssayQuestion();
-            case multichoice: return new NumericalQuestion();
+            case multichoice: return new MultichoiceQuestion();
             //case calculated: return new NumericalQuestion();
             //case shortanswer: return new NumericalQuestion();
             //ARNAUD: case truefalse: return new NumericalQuestion();

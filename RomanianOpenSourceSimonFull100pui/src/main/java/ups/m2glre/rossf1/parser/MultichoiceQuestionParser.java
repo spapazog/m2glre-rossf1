@@ -19,6 +19,19 @@ import ups.m2glre.rossf1.question.NumericalQuestion;
 </answer>
 <shuffleanswers>1</shuffleanswers>
 <single>true</single>
+<correctfeedback>
+            <text></text>
+        </correctfeedback>
+        <partiallycorrectfeedback>
+            <text></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback>
+            <text></text>
+        </incorrectfeedback>
+        <answernumbering>none</answernumbering>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
  */
 public final class MultichoiceQuestionParser extends QuestionParser{
 
@@ -43,7 +56,16 @@ public final class MultichoiceQuestionParser extends QuestionParser{
             //Parse le single
             quest.setSingle(Integer.valueOf(questionXML.getChild("single")
                     .getValue()) == 1);
-            
+            quest.setCorrectfeedbackText(questionXML.getChild("correctfeedback").
+                    getChild("text").getValue());
+            quest.setPartiallyfeedbackText(questionXML.getChild("partiallycorrectfeedback").
+                    getChild("text").getValue());
+            quest.setIncorrectfeedbackText(questionXML.getChild("incorrectfeedback").
+                    getChild("text").getValue());
+            quest.setGeneralfeedbackText(questionXML.getChild("generalfeedback").
+                    getChild("text").getValue());
+            quest.setAnswernumbering(questionXML.getChild("answernumbering").getValue());
+
         } catch (Exception e) {
             throw new InvalidQuizFormatException(e.getCause());
         }
