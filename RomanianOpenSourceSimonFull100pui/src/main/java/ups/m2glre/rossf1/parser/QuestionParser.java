@@ -9,6 +9,7 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionTextFormat;
 import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 import ups.m2glre.rossf1.question.GenericQuestion;
 import ups.m2glre.rossf1.question.QuestionFactory;
+import ups.m2glre.rossf1.utils.MoodleXML;
 
 /**
  * QuestionParser.
@@ -55,31 +56,33 @@ public abstract class QuestionParser {
             return;     //Uniquement texte/categorie dedans
 
         //Parsage du nom
-        question.setName(
-                questionXML.getChild("name").getChild("text").getValue());
+        question.setName(questionXML.
+                getChild(MoodleXML.TAG_NAME).
+                getChild(MoodleXML.TAG_TEXT).getValue());
 
         //Parasage de question caché
-        if (questionXML.getChild("hidden") != null)
+        if (questionXML.getChild(MoodleXML.TAG_HIDDEN) != null)
             question.setQuestionHidden(Integer.valueOf(questionXML
-                        .getChild("hidden").getValue()) == 1);
+                        .getChild(MoodleXML.TAG_HIDDEN).getValue()) == 1);
         else
             question.setQuestionHidden(false);
 
         //Parasage de feedback
         question.setFeedback(questionXML.
-                getChild("generalfeedback").getChild("text").getValue());
+                getChild(MoodleXML.TAG_GENERALFEEDBACK).
+                getChild(MoodleXML.TAG_TEXT).getValue());
 
         //Parasage de pénalité
-        if (questionXML.getChild("penalty") != null)
+        if (questionXML.getChild(MoodleXML.TAG_PENALTY) != null)
             question.setPenalty(Float.valueOf(questionXML.
-                    getChild("penalty").getValue()));
+                    getChild(MoodleXML.TAG_PENALTY).getValue()));
         else
             question.setPenalty(0f);
 
         //Parsage de grade
-        if (questionXML.getChild("defaultgrade") != null)
+        if (questionXML.getChild(MoodleXML.TAG_DEFAULTGRADE) != null)
             question.setGrade(Float.valueOf(questionXML.
-                    getChild("defaultgrade").getValue()));
+                    getChild(MoodleXML.TAG_DEFAULTGRADE).getValue()));
         else
             question.setGrade(1f);
     }
@@ -90,7 +93,7 @@ public abstract class QuestionParser {
      * @return le type de la question
      */
     private QuestionType getQuestionType(final Element questionXML) {
-        return QuestionType.valueOf(questionXML.getAttributeValue("type"));
+        return QuestionType.valueOf(questionXML.getAttributeValue(MoodleXML.TAG_TYPE));
     }
     /**
      * Parse le type de la question
@@ -99,7 +102,7 @@ public abstract class QuestionParser {
      */
     private void parseQuestionType(final Element questionXML) {
         question.setQuestionType(QuestionType.valueOf(
-                questionXML.getAttributeValue("type")));
+                questionXML.getAttributeValue(MoodleXML.TAG_TYPE)));
     }
 
     /**
@@ -112,16 +115,16 @@ public abstract class QuestionParser {
             return;     //Uniquement texte/categorie dedans
 
         //Parsing du format de texte
-        String questionTextFormat = questionXML.getChild("questiontext").
-                getAttributeValue("format");
+        String questionTextFormat = questionXML.getChild(MoodleXML.TAG_QUESTIONTEXT).
+                getAttributeValue(MoodleXML.TAG_FORMAT);
         //Dans le cas où le format n'est pas renseigné
         if (questionTextFormat == null)
             questionTextFormat = "moodle_auto_format";
 
         //Parsing du texte
         String questionText = questionXML.
-                getChild("questiontext").
-                getChild("text").getValue();
+                getChild(MoodleXML.TAG_QUESTIONTEXT).
+                getChild(MoodleXML.TAG_TEXT).getValue();
 
         //Affectation du texte de la question
         question.setQuestionText(new QuestionText(questionText,
@@ -134,7 +137,7 @@ public abstract class QuestionParser {
      * @return
      */
     public boolean parseAnswerShuffle(final Element questionXML) {
-        return Integer.valueOf(questionXML.getChild("shuffleanswers")
+        return Integer.valueOf(questionXML.getChild(MoodleXML.TAG_SHUFFLEANSWERS)
                 .getValue()) == 1;
     }
 }

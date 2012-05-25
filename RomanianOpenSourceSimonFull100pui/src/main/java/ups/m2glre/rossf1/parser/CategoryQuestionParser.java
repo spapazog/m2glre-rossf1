@@ -4,6 +4,7 @@ import org.jdom.Element;
 
 import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
 import ups.m2glre.rossf1.question.CategoryQuestion;
+import ups.m2glre.rossf1.utils.MoodleXML;
 
 public class CategoryQuestionParser extends QuestionParser {
 
@@ -11,7 +12,7 @@ public class CategoryQuestionParser extends QuestionParser {
             throws InvalidQuizFormatException {
         CategoryQuestion q = (CategoryQuestion) question;
 
-        q.setCategoryText(questionXML.
-                getChild("category").getChild("text").getValue());
+        q.setCategoryText(questionXML.getChild(MoodleXML.TAG_CATEGORY).
+                getChild(MoodleXML.TAG_TEXT).getValue());
     }
 }
