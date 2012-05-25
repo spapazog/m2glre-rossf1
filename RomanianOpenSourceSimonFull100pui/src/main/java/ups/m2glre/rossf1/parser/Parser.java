@@ -24,7 +24,7 @@ public class Parser {
            document = new SAXBuilder().build(is);
 
            //Création du parseur
-           new QuizParser(document.getRootElement());
+           new QuizParser();
 
        } catch (JDOMException e) {
            e.printStackTrace();

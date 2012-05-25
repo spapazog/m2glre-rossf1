@@ -29,7 +29,7 @@ public abstract class QuestionParser {
      */
     public final Question parseQuestion(final Element questionXML)
             throws Exception {
-        question = QuestionFactory.getQuestion(getQuestionType(questionXML));
+        question = QuestionFactory.getQuestion(questionXML);
         parseQuestionType(questionXML);
         parseQuestionText(questionXML);
         parseGenericField(questionXML);
@@ -85,15 +85,6 @@ public abstract class QuestionParser {
                     getChild(MoodleXML.TAG_DEFAULTGRADE).getValue()));
         else
             question.setGrade(1f);
-    }
-
-    /**
-     * Récupère le type de la question
-     * @param questionXML question a parser
-     * @return le type de la question
-     */
-    private QuestionType getQuestionType(final Element questionXML) {
-        return QuestionType.valueOf(questionXML.getAttributeValue(MoodleXML.TAG_TYPE));
     }
     /**
      * Parse le type de la question

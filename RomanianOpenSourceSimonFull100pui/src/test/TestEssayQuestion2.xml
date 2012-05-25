@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<quiz>
+<quiz>   
     <question type="essay">
         <name>
-            <text>Question ouverte</text>
+            <text>Question ouverte2</text>
         </name>
         <questiontext format="moodle_auto_format">
-            <text>Ecrire un programme qui affiche Hello world</text>
+            <text>Un text de question</text>
         </questiontext>
         <image></image>
         <generalfeedback>
             <text></text>
         </generalfeedback>
         <defaultgrade>1</defaultgrade>
-        <penalty>0</penalty>
+        <penalty>1</penalty>
         <hidden>0</hidden>
-        <shuffleanswers>0</shuffleanswers>
-        <answer fraction="0">
+        <shuffleanswers>1</shuffleanswers>
+        <answer fraction="2">
             <feedback>
-                <text>"Feedback test"</text>
+                <text>"Good job"</text>
             </feedback>
         </answer>
     </question>

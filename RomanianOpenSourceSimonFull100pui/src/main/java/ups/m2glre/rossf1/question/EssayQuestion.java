@@ -4,8 +4,8 @@ public class EssayQuestion extends GenericQuestion {
 
     private boolean answerShuffle;
     private int answerFraction;
-    private int answerValue;
-    
+    private String answerText;
+
     /**
      * @return the answerShuffle
      */
@@ -33,13 +33,13 @@ public class EssayQuestion extends GenericQuestion {
     /**
      * @return the answerValue
      */
-    public final int getAnswerValue() {
-        return answerValue;
+    public final String getAnswerText() {
+        return answerText;
     }
     /**
      * @param answerValue the answerValue to set
      */
-    public final void setAnswerValue(int answerValue) {
-        this.answerValue = answerValue;
+    public final void setAnswerText(String answerText) {
+        this.answerText = answerText;
     }
 }
