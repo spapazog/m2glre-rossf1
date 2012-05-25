@@ -17,7 +17,7 @@
         <shuffleanswers>0</shuffleanswers>
         <answer fraction="0">
             <feedback>
-                <text>"Feedback test"</text>
+                <text>Feedback test</text>
             </feedback>
         </answer>
     </question>

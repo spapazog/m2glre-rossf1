@@ -21,8 +21,10 @@ public class EssayQuestionParserTest extends TestCase {
             Document document = new SAXBuilder().build(new File("src/test/TestEssayQuestion1.xml"));
             EssayQuestion essayQuestion = (EssayQuestion) essayQuestionParser.
                     parseQuestion(document.getRootElement().getChild("question"));
-            checkAnswerFraction(essayQuestion);
-            checkFeedbackText(essayQuestion);
+
+            assertEquals(0, essayQuestion.getAnswerFraction());
+            assertEquals("Feedback test", essayQuestion.getAnswerText());
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
@@ -30,27 +32,18 @@ public class EssayQuestionParserTest extends TestCase {
         }
 
     }
-    
+
     public void testFile2() {
         try {
             Document document = new SAXBuilder().build(new File("src/test/TestEssayQuestion2.xml"));
             EssayQuestion essayQuestion = (EssayQuestion) essayQuestionParser.
                     parseQuestion(document.getRootElement().getChild("question"));
-            checkAnswerFraction(essayQuestion);
-            checkFeedbackText(essayQuestion);
+            assertEquals(2, essayQuestion.getAnswerFraction());
+            assertEquals("Good job", essayQuestion.getAnswerText());
         } catch (Exception e) {
             e.printStackTrace();
             fail();
         }
 
-    }
-
-
-    private void checkAnswerFraction(EssayQuestion essayQuestion) {
-        assertEquals(2, essayQuestion.getAnswerFraction());
-    }
-
-    private void checkFeedbackText(EssayQuestion essayQuestion) {
-        assertEquals("Good job", essayQuestion.getAnswerText());
     }
 }

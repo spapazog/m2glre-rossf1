@@ -17,7 +17,7 @@
         <shuffleanswers>1</shuffleanswers>
         <answer fraction="2">
             <feedback>
-                <text>"Good job"</text>
+                <text>Good job</text>
             </feedback>
         </answer>
     </question>
