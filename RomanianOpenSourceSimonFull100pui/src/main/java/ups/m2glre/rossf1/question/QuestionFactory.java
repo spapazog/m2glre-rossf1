@@ -12,9 +12,8 @@ public class QuestionFactory {
             case description: return new DescriptionQuestion();
             case cloze: return new ClozeQuestion();
             case category: return new CategoryQuestion();
-
-            //SIMON: case multichoice: return new NumericalQuestion();
             case essay: return new EssayQuestion();
+            case multichoice: return new NumericalQuestion();
             //case calculated: return new NumericalQuestion();
             //case shortanswer: return new NumericalQuestion();
             //ARNAUD: case truefalse: return new NumericalQuestion();
