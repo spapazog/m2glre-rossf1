@@ -18,10 +18,9 @@ public class EssayQuestionParser extends QuestionParser {
                     questionXML.getChild(MoodleXML.TAG_ANSWER).
                     getAttributeValue(MoodleXML.TAG_FRACTION)));
             //Parse la valeur
-            q.setAnswerValue(Integer.valueOf(
-                    questionXML.getChild(MoodleXML.TAG_ANSWER).
+            q.setAnswerText(questionXML.getChild(MoodleXML.TAG_ANSWER).
                     getChild(MoodleXML.TAG_FEEDBACK).
-                    getChild(MoodleXML.TAG_TEXT).getValue()));
+                    getChild(MoodleXML.TAG_TEXT).getValue());
             //Parse la answer shuffle
             q.setAnswerShuffle(parseAnswerShuffle(questionXML));
         } catch (Exception e) {
