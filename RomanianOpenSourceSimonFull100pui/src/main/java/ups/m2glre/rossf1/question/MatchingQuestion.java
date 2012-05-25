@@ -16,7 +16,7 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 
 public class MatchingQuestion extends GenericQuestion {
     
-    HashMap<String, String> subquestions;
+    HashMap<String, String> subquestions = new HashMap<String, String>();
     boolean suffleAnswer;
     
     public void addSubquestion(String text, String answer) {
@@ -29,6 +29,10 @@ public class MatchingQuestion extends GenericQuestion {
 
     public void setSuffleAnswer(boolean suffleAnswer) {
         this.suffleAnswer = suffleAnswer;
+    }
+    
+    public HashMap<String, String> getSubquestion() {
+        return subquestions;
     }
     
     
