@@ -1,5 +1,8 @@
 package ups.m2glre.rossf1.utils;
 
+import org.jdom.Attribute;
+import org.jdom.Element;
+
 /**
  * Classe des constantes des fichiers XML de Moodle
  * @author steeepph
@@ -35,4 +38,7 @@ public class MoodleXML {
     public static final String TAG_PARTCORRECTFB = "partiallycorrectfeedback";
     public static final String TAG_CORRECTFB = "correctfeedback";
     public static final String TAG_SINGLE = "single";
+    public static final String TAG_CORRECTANSWERFORMAT = "correctanswerformat";
+    public static final String TAG_CORRECTANSWERLENGTH = "correctanswerlength";
+	public static final String TAG_TOLERANCETYPE = "tolerancetype";
 }
