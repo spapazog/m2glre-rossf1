@@ -3,6 +3,7 @@ package ups.m2glre.rossf1.parser;
 import java.io.IOException;
 import java.io.InputStream;
 
+import org.jdom.Document;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 
@@ -14,7 +15,7 @@ import universite.toulouse.moodlexmlapi.core.data.Quiz;
  *
  */
 public class Parser {
-    private org.jdom.Document document;
+    private Document document;
 
     /**
      * Constructeur de la classe parseur

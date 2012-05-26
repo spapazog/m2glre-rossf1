@@ -41,4 +41,7 @@ public class MoodleXML {
     public static final String TAG_CORRECTANSWERFORMAT = "correctanswerformat";
     public static final String TAG_CORRECTANSWERLENGTH = "correctanswerlength";
 	public static final String TAG_TOLERANCETYPE = "tolerancetype";
+    public static final String TAG_IMAGE64 = "image_base64";
+    public static final String TAG_IMAGEURL = "image";
+
 }

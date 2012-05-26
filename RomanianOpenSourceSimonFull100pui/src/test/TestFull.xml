@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
+    <question type="category">
+        <category>
+            <text>$course$/Défaut pour 1SA3GL1</text>
+        </category>
+    </question>
+    <question type="cloze">
+        <name>
+            <text>Question &quot;Cloze&quot; (composite ?)</text>
+        </name>
+        <questiontext>
+            <text>Cette question comporte du texte dans lequel on a directement
+                intégré des réponses à choix multiples {1:MULTICHOICE:Mauvaise
+                réponse#Feedback pour cette mauvaise réponse~Une autre mauvaise
+                réponse#Feedback pour cette autre mauvaise réponse~=Bonne
+                réponse#Feedback pour la bonne réponse~%50%Réponse qui vaut la
+                moitié des points#Feedback pour la question qui vaut la moitié
+                des points} ;</text>
+        </questiontext>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <shuffleanswers>0</shuffleanswers>
+    </question>
+    <question type="description">
+        <name>
+            <text>Consigne dispositif électronique</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>Pas de calculatrice !</text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0</defaultgrade>
+        <penalty>0</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>0</shuffleanswers>
+    </question>
+    <question type="essay">
+        <name>
+            <text>Question ouverte</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>Ecrire un programme qui affiche Hello world</text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1</defaultgrade>
+        <penalty>0</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>0</shuffleanswers>
+        <answer fraction="0">
+            <feedback>
+                <text>Feedback test</text>
+            </feedback>
+        </answer>
+    </question>
     <question type="multichoice">
         <name>
             <text>Architectures N tiers</text>
@@ -19,10 +79,8 @@
         <penalty>0.1</penalty>
         <hidden>0</hidden>
         <shuffleanswers>1</shuffleanswers>
-        
         <single>false</single>
         <shuffleanswers>true</shuffleanswers>
-        
         <correctfeedback>
             <text>OK</text>
         </correctfeedback>
@@ -32,7 +90,6 @@
         <incorrectfeedback>
             <text>KO</text>
         </incorrectfeedback>
-        
         <answernumbering>abc</answernumbering>
         <answer fraction="0">
             <text>foo</text>
@@ -41,7 +98,9 @@
             </feedback>
         </answer>
         <answer fraction="33.333">
-            <text>Une architecture client serveur est une architecture N-tiers</text>
+            <text>
+                Une architecture client serveur est une architecture N-tiers
+            </text>
             <feedback>
                 <text>
 
@@ -70,5 +129,63 @@
                 </text>
             </feedback>
         </answer>
+    </question>
+    <question type="numerical">
+        <name>
+            <text>HTTP 1er protocole de l'Internet</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>En quelle année HTTP devient le premier protocole de l'Internet ?</text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1</defaultgrade>
+        <penalty>0.1</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>0</shuffleanswers>
+        <answer fraction="100">
+            <text>1996</text>
+            <tolerance>0</tolerance>
+            <feedback>
+                <text>yo</text>
+            </feedback>
+        </answer>
+        <units>
+                  <unit>
+                    <multiplier>1</multiplier>
+                    <unit_name>annee</unit_name>
+                  </unit>
+                </units>
+    </question>
+    <question type="matching">
+        <name>
+            <text>Serveur d'application / éditeurs</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>Relier les serveurs d'applications avec les bons éditeurs
+            </text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1</defaultgrade>
+        <penalty>0.1</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>1</shuffleanswers>
+        <subquestion>
+            <text>JBOSS</text>
+            <answer>
+                <text>Redhat</text>
+            </answer>
+        </subquestion>
+         <subquestion>
+            <text>Websphere</text>
+            <answer>
+                <text>IBM</text>
+            </answer>
+        </subquestion>
     </question>
 </quiz>

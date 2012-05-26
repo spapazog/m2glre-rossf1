@@ -9,6 +9,7 @@ import universite.toulouse.moodlexmlapi.core.QuizImportExportService;
 import universite.toulouse.moodlexmlapi.core.data.ImportedQuiz;
 import universite.toulouse.moodlexmlapi.core.data.Quiz;
 import ups.m2glre.rossf1.parser.Parser;
+import ups.m2glre.rossf1.writer.QuizWriter;
 
 /**
  * Service d'import/export de Quizz moodle
@@ -36,7 +37,7 @@ public class QuizServiceImpl implements QuizImportExportService {
      * @return une reference vers un fichier XML
      */
     public final OutputStream exportQuiz(final Quiz quiz) {
-        return null;
+        return new QuizWriter(quiz).getOutputStream();
     }
 
 }

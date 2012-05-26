@@ -1,38 +1,17 @@
 package ups.m2glre.rossf1.parser;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.jdom.Element;
 
 import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
-import universite.toulouse.moodlexmlapi.core.data.Question;
 import ups.m2glre.rossf1.question.MultichoiceQuestion;
-import ups.m2glre.rossf1.question.NumericalQuestion;
+import ups.m2glre.rossf1.question.MultichoiceQuestion.MultichoiceAnswer;
 import ups.m2glre.rossf1.utils.MoodleXML;
 
 /**
- *
  * @author Simon Joussellin
- *
- *<answer fraction="100">
-<text>Ceci est la bonne réponse<text>
-<feedback>
-<text>Bravo !</text>
-</feedback>
-</answer>
-<shuffleanswers>1</shuffleanswers>
-<single>true</single>
-<correctfeedback>
-            <text></text>
-        </correctfeedback>
-        <partiallycorrectfeedback>
-            <text></text>
-        </partiallycorrectfeedback>
-        <incorrectfeedback>
-            <text></text>
-        </incorrectfeedback>
-        <answernumbering>none</answernumbering>
-        <generalfeedback>
-            <text></text>
-        </generalfeedback>
  */
 public final class MultichoiceQuestionParser extends QuestionParser{
 
@@ -42,22 +21,27 @@ public final class MultichoiceQuestionParser extends QuestionParser{
 
         MultichoiceQuestion quest = (MultichoiceQuestion) question;
 
-        try {
-            //Parse la fraction de answer
-            quest.setAnswerFraction(Integer.valueOf(questionXML.
-                    getChild(MoodleXML.TAG_ANSWER).
-                    getAttributeValue(MoodleXML.TAG_FRACTION)));
-            //Parse le texte de answer
-            quest.setAnswerText(questionXML.
-                    getChild(MoodleXML.TAG_ANSWER).
-                    getChild(MoodleXML.TAG_TEXT).getValue());
-            //Parse le answer shuffle
+            //Parse les answers
+            List answers = questionXML.getChildren(MoodleXML.TAG_ANSWER);
+            Iterator i = answers.iterator();
+
+            while (i.hasNext()) {
+                Float fraction;
+                String answerText;
+                String feedbackText;
+                Element answer = (Element) i.next();
+
+                fraction = Float.valueOf(answer.
+                        getAttributeValue(MoodleXML.TAG_FRACTION));
+                answerText = answer.getChild(MoodleXML.TAG_TEXT).getValue();
+                feedbackText = answer.getChild(MoodleXML.TAG_FEEDBACK).
+                        getChild(MoodleXML.TAG_TEXT).getValue();
+                quest.getAnswers().add(quest.new MultichoiceAnswer(
+                        fraction, answerText, feedbackText));
+            }
+
             quest.setAnswerShuffle(parseAnswerShuffle(questionXML));
-            //Parse le texte de feedback de answer
-            quest.setFeedbackText(questionXML.
-                    getChild(MoodleXML.TAG_ANSWER).
-                    getChild(MoodleXML.TAG_FEEDBACK).
-                    getChild(MoodleXML.TAG_TEXT).getValue());
+
             //Parse le single
             quest.setSingle(questionXML.
                     getChild(MoodleXML.TAG_SINGLE).getValue() == "true");
@@ -74,9 +58,6 @@ public final class MultichoiceQuestionParser extends QuestionParser{
                     getChild(MoodleXML.TAG_ANSWERNUMBERING).getValue());
 
 
-        } catch (Exception e) {
-            throw new InvalidQuizFormatException(e.getCause());
-        }
 
     }
 
