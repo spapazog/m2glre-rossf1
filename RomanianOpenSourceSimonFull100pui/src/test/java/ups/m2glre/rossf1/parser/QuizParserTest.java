@@ -6,8 +6,6 @@ import junit.framework.TestCase;
 import org.jdom.Document;
 import org.jdom.input.SAXBuilder;
 
-import universite.toulouse.moodlexmlapi.core.data.QuestionType;
-import ups.m2glre.rossf1.question.CategoryQuestion;
 import ups.m2glre.rossf1.quiz.ImportedQuizImpl;
 import ups.m2glre.rossf1.quiz.QuizImpl;
 

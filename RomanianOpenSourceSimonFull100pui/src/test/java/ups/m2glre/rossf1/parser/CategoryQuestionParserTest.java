@@ -6,7 +6,6 @@ import junit.framework.TestCase;
 import org.jdom.Document;
 import org.jdom.input.SAXBuilder;
 
-import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 import ups.m2glre.rossf1.question.CategoryQuestion;
 
 public class CategoryQuestionParserTest extends TestCase {
@@ -20,7 +19,7 @@ public class CategoryQuestionParserTest extends TestCase {
         document = null;
 
         try {
-            document = new SAXBuilder().build(new File("src/test/quiz-exemple-20120229-0812.xml"));
+            document = new SAXBuilder().build(new File("src/test/TestCategoryQuestion.xml"));
             categoryQuestion = (CategoryQuestion) categoryQuestionParser.
                     parseQuestion(document.getRootElement().getChild("question"));
         } catch (Exception e) {

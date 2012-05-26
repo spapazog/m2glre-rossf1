@@ -19,8 +19,10 @@
         <penalty>0.1</penalty>
         <hidden>0</hidden>
         <shuffleanswers>1</shuffleanswers>
+        
         <single>false</single>
         <shuffleanswers>true</shuffleanswers>
+        
         <correctfeedback>
             <text>OK</text>
         </correctfeedback>
@@ -30,6 +32,7 @@
         <incorrectfeedback>
             <text>KO</text>
         </incorrectfeedback>
+        
         <answernumbering>abc</answernumbering>
         <answer fraction="0">
             <text>foo</text>
@@ -38,9 +41,7 @@
             </feedback>
         </answer>
         <answer fraction="33.333">
-            <text>
-                Une architecture client serveur est une architecture N-tiers
-            </text>
+            <text>Une architecture client serveur est une architecture N-tiers</text>
             <feedback>
                 <text>
 
