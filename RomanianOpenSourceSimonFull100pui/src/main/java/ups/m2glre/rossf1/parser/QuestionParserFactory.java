@@ -17,7 +17,7 @@ public class QuestionParserFactory {
             case category: return new CategoryQuestionParser();
             case essay: return new EssayQuestionParser();
             case multichoice: return new MultichoiceQuestionParser();
-            //case calculated: return new NumericalQuestionParser();
+            case calculated: return new CalculatedQuestionParser();
             //case shortanswer: return new NumericalQuestionParser();
             //case truefalse: return new NumericalQuestionParser();
         }

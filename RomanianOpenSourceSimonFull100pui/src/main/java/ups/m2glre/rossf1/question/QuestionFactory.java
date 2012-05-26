@@ -17,7 +17,7 @@ public class QuestionFactory {
             case category: return new CategoryQuestion();
             case essay: return new EssayQuestion();
             case multichoice: return new MultichoiceQuestion();
-            //case calculated: return new NumericalQuestion();
+            case calculated: return new CalculatedQuestion();
             //case shortanswer: return new NumericalQuestion();
             //ARNAUD: case truefalse: return new NumericalQuestion();
         }
