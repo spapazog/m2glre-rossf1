@@ -1,7 +1,13 @@
 package ups.m2glre.rossf1.utils;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import org.jdom.Attribute;
 import org.jdom.Element;
+
+import ups.m2glre.rossf1.question.internal.Answer;
 
 public class ParserUtil {
 
@@ -73,5 +79,32 @@ public class ParserUtil {
                         " expected boolean value");
             }
         }
+    }
+
+    /*
+     * getAnswers
+     * @param parent, parent node of all answer node
+     * @return List ofAnswer
+     */
+    public static List<Answer> getAnswers(Element parent) throws Throwable {
+        List<Answer> answers = new ArrayList<Answer>();
+        List answersElement = parent.getChildren(MoodleXML.TAG_ANSWER);
+        Iterator i = answersElement.iterator();
+        while (i.hasNext()) {
+            Float fraction;
+            String answerText;
+            String feedbackText;
+            Element answerElement = (Element) i.next();
+
+            fraction = ParserUtil.getAttributeFloat(answerElement, MoodleXML.TAG_FRACTION);
+            answerText = ParserUtil.getElementText(answerElement, MoodleXML.TAG_TEXT);
+            feedbackText = answerElement.getChild(MoodleXML.TAG_FEEDBACK).
+                    getChild(MoodleXML.TAG_TEXT).getValue();
+
+            Answer answer = new Answer(fraction, answerText, feedbackText);
+            answers.add(answer);
+        }
+
+        return answers;
     }
 }

@@ -25,8 +25,7 @@ public class CalculatedQuestionParser extends QuestionParser  {
 
         try {
             //parse answer shuffle
-            calculatedQuestion.setAnswerShuffle(
-                    parseAnswerShuffle(questionElement));
+            boolean answerShuffle = parseAnswerShuffle(questionElement);
 
             // parse answer node
             Element answerElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_ANSWER);
@@ -42,6 +41,7 @@ public class CalculatedQuestionParser extends QuestionParser  {
                     MoodleXML.TAG_TEXT);
 
             // add to Object
+            calculatedQuestion.setAnswerShuffle(answerShuffle);
             calculatedQuestion.setAnswerFraction(answerFraction);
             calculatedQuestion.setAnswerTxt(answerText);
             calculatedQuestion.setAnswerTolerance(tolerance);

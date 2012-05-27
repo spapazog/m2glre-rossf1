@@ -31,7 +31,7 @@ public class ShortAnswerQuestionParserTest extends TestCase {
     }
 
     public void testUsecase() {
-        assertFalse(shortAnswerQuestion.isUsecase());
+        assertEquals(0, shortAnswerQuestion.getUseCase());
     }
     public void testAnswer() {
         //1ere answer

@@ -1,6 +1,7 @@
 package ups.m2glre.rossf1.question;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import ups.m2glre.rossf1.question.internal.Answer;
 
@@ -17,7 +18,7 @@ public class MultichoiceQuestion extends GenericQuestion{
     private String incorrectfeedbackText;
     private String generalfeedbackText;
     private String answernumbering;
-    private ArrayList<Answer> answers = new ArrayList<Answer>();
+    private List<Answer> answers = new ArrayList<Answer>();
 
     public String getCorrectfeedbackText() {
         return correctfeedbackText;
@@ -61,10 +62,10 @@ public class MultichoiceQuestion extends GenericQuestion{
     public void setAnswerShuffle(boolean answerShuffle) {
         this.answerShuffle = answerShuffle;
     }
-    public ArrayList<Answer> getAnswers() {
+    public List<Answer> getAnswers() {
         return answers;
     }
-    public void setAnswers(ArrayList<Answer> answers) {
+    public void setAnswers(List<Answer> answers) {
         this.answers = answers;
     }
 }
