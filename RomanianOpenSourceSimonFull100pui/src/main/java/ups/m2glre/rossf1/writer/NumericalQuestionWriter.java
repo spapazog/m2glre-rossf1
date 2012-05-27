@@ -36,9 +36,9 @@ public class NumericalQuestionWriter extends QuestionWriter {
         Element units = new Element(MoodleXML.TAG_UNITS);
         Element unit = new Element(MoodleXML.TAG_UNIT);
         Element unitMulti = new Element(MoodleXML.TAG_MULTIPLIER);
-        unitMulti.setText(String.valueOf(q.getAnswerUnitMultiplier()));
+        unitMulti.setText(String.valueOf(q.getUnit().getMultiplier()));
         Element unitName = new Element(MoodleXML.TAG_UNIT_NAME);
-        unitName.setText(String.valueOf(q.getAnswerUnitName()));
+        unitName.setText(String.valueOf(q.getUnit().getUnitName()));
         unit.addContent(unitMulti);
         unit.addContent(unitName);
         units.addContent(unit);

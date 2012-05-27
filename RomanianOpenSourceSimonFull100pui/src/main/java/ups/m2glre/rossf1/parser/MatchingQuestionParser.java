@@ -5,9 +5,9 @@ import java.util.List;
 
 import org.jdom.Element;
 
-import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
 import ups.m2glre.rossf1.question.MatchingQuestion;
 import ups.m2glre.rossf1.utils.MoodleXML;
+import ups.m2glre.rossf1.utils.ParserUtil;
 
 /** Matching question parser
  * XML representation is <subquestion>1..* :
@@ -24,57 +24,33 @@ public class MatchingQuestionParser extends QuestionParser  {
 
     @Override
     public final void parseSpecializedQuestion(Element questionElement)
-            throws InvalidQuizFormatException {
+            throws Throwable {
 
         matchingQuestion = (MatchingQuestion) question;
 
         // browse subquestions
-        try {
+        parseSubQuestions(questionElement);
 
-            List listQuestions = questionElement.getChildren(MoodleXML.TAG_SUBQUESTION);
-            Iterator i = listQuestions.iterator();
-
-            while (i.hasNext()) {
-                Element subQuestionXML = (Element) i.next();
-                parseSubQuestion(subQuestionXML);
-            }
-
-            Element suffleElement = questionElement.getChild(MoodleXML.TAG_SUFFLE);
-            if (suffleElement == null)
-                throw new Throwable("Node doesn't contain"
-                        + MoodleXML.TAG_SUFFLE + "element.");
-            boolean suffleAnswer = Boolean.parseBoolean(suffleElement.getText());
-            matchingQuestion.setSuffleAnswer(suffleAnswer);
-
-        } catch (Throwable t) {
-            throw new InvalidQuizFormatException(t);
-        }
+        Element shuffleElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_SUFFLE);
+        boolean shuffleAnswer = Boolean.parseBoolean(shuffleElement.getText());
+        matchingQuestion.setSuffleAnswer(shuffleAnswer);
     }
 
-    private void parseSubQuestion(Element subQuestionElement)
+    private void parseSubQuestions(Element questionElement)
             throws Throwable {
 
-        // get children element
-        Element textElement = subQuestionElement.getChild(MoodleXML.TAG_TEXT);
-        if (textElement == null)
-            throw new Throwable(MoodleXML.TAG_SUBQUESTION +
-                    " node doesn't contain" + MoodleXML.TAG_TEXT + "element.");
+        // browse subquestions
+        List listQuestions = questionElement.getChildren(MoodleXML.TAG_SUBQUESTION);
+        Iterator i = listQuestions.iterator();
 
-        Element answerElement = subQuestionElement.
-                getChild(MoodleXML.TAG_SUBQUESTION_ANSWER);
-        if (answerElement == null)
-            throw new Throwable(MoodleXML.TAG_SUBQUESTION +
-                    " node doesn't contain"+ MoodleXML.TAG_SUBQUESTION_ANSWER +
-                    "element.");
+        while (i.hasNext()) {
+            Element subQuestionElement = (Element) i.next();
 
-        Element answerTextElement = answerElement.getChild(MoodleXML.TAG_TEXT);
-        if (answerTextElement == null) {
-            throw new Throwable(MoodleXML.TAG_SUBQUESTION +
-                    " node doesn't contain"+ MoodleXML.TAG_TEXT +
-                    "element.");
+            String textElement = ParserUtil.getElementText(subQuestionElement, MoodleXML.TAG_TEXT);
+            Element answerElement = ParserUtil.getElement(subQuestionElement, MoodleXML.TAG_SUBQUESTION_ANSWER);
+            String answerTextElement = ParserUtil.getElementText(answerElement, MoodleXML.TAG_TEXT);
+
+            matchingQuestion.addSubquestion(textElement, answerTextElement);
         }
-
-        matchingQuestion.addSubquestion(textElement.getText(),
-                answerTextElement.getText());
     }
 }

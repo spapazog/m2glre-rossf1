@@ -1,13 +1,21 @@
 package ups.m2glre.rossf1.question;
 
+import ups.m2glre.rossf1.question.internal.Unit;
+
 public class NumericalQuestion extends GenericQuestion {
     private int answerFraction;
     private int answerValue;
     private int answerTolerence;
-    private int answerUnitMultiplier;
     private boolean answerShuffle;
-    private String answerUnitName;
     private String feedbackText;
+    private Unit unit;
+
+    public Unit getUnit() {
+        return unit;
+    }
+    public void setUnit(Unit unit) {
+        this.unit = unit;
+    }
     /**
      * @return the answerFraction
      */
@@ -45,18 +53,6 @@ public class NumericalQuestion extends GenericQuestion {
         this.answerTolerence = answerTolerence;
     }
     /**
-     * @return the answerUnitMultiplier
-     */
-    public final int getAnswerUnitMultiplier() {
-        return answerUnitMultiplier;
-    }
-    /**
-     * @param answerUnitMultiplier the answerUnitMultiplier to set
-     */
-    public final void setAnswerUnitMultiplier(int answerUnitMultiplier) {
-        this.answerUnitMultiplier = answerUnitMultiplier;
-    }
-    /**
      * @return the answerShuffle
      */
     public final boolean isAnswerShuffle() {
@@ -67,18 +63,6 @@ public class NumericalQuestion extends GenericQuestion {
      */
     public final void setAnswerShuffle(boolean answerShuffle) {
         this.answerShuffle = answerShuffle;
-    }
-    /**
-     * @return the answerUnitName
-     */
-    public final String getAnswerUnitName() {
-        return answerUnitName;
-    }
-    /**
-     * @param answerUnitName the answerUnitName to set
-     */
-    public final void setAnswerUnitName(String answerUnitName) {
-        this.answerUnitName = answerUnitName;
     }
     /**
      * @return the feedbackText

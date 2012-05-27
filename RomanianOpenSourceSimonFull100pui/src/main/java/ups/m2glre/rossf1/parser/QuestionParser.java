@@ -30,11 +30,15 @@ public abstract class QuestionParser {
     public final Question parseQuestion(final Element questionXML)
             throws Exception {
         question = QuestionFactory.getQuestion(questionXML);
-        parseQuestionType(questionXML);
-        parseQuestionText(questionXML);
-        parseGenericField(questionXML);
-        parseSpecializedQuestion(questionXML);
 
+        try {
+            parseQuestionType(questionXML);
+            parseQuestionText(questionXML);
+            parseGenericField(questionXML);
+            parseSpecializedQuestion(questionXML);
+        } catch (Throwable t) {
+            throw new InvalidQuizFormatException(t);
+        }
         return question;
     }
 
@@ -44,7 +48,7 @@ public abstract class QuestionParser {
      * @throws InvalidQuizFormatException si le fichier n'est pas au bon format
      */
     public abstract void parseSpecializedQuestion(Element questionXML)
-            throws InvalidQuizFormatException;
+            throws Throwable;
 
     /**
      * Méthode de parsage des champs génériques

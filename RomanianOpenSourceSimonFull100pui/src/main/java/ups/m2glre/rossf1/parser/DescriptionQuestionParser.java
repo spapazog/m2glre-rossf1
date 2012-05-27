@@ -8,7 +8,7 @@ import ups.m2glre.rossf1.question.DescriptionQuestion;
 public class DescriptionQuestionParser extends QuestionParser {
 
     public void parseSpecializedQuestion(Element questionXML)
-            throws InvalidQuizFormatException {
+            throws Throwable {
         DescriptionQuestion q = (DescriptionQuestion) question;
 
         try {
@@ -18,5 +18,4 @@ public class DescriptionQuestionParser extends QuestionParser {
             throw new InvalidQuizFormatException(e.getCause());
         }
     }
-
 }

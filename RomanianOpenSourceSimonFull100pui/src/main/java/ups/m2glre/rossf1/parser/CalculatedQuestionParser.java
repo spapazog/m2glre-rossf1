@@ -6,10 +6,10 @@ import java.util.List;
 
 import org.jdom.Element;
 
-import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
 import ups.m2glre.rossf1.question.CalculatedQuestion;
 import ups.m2glre.rossf1.question.internal.DataSetDefinition;
 import ups.m2glre.rossf1.question.internal.DataSetItem;
+import ups.m2glre.rossf1.question.internal.Unit;
 import ups.m2glre.rossf1.utils.MoodleXML;
 import ups.m2glre.rossf1.utils.ParserUtil;
 
@@ -19,61 +19,43 @@ public class CalculatedQuestionParser extends QuestionParser  {
 
     @Override
     public final void parseSpecializedQuestion(Element questionElement)
-            throws InvalidQuizFormatException {
+            throws Throwable {
 
         calculatedQuestion = (CalculatedQuestion) question;
 
-        try {
-            //parse answer shuffle
-            boolean answerShuffle = parseAnswerShuffle(questionElement);
+        //parse answer shuffle
+        boolean answerShuffle = parseAnswerShuffle(questionElement);
 
-            // parse answer node
-            Element answerElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_ANSWER);
+        // parse answer node
+        Element answerElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_ANSWER);
 
-            int answerFraction = ParserUtil.getAttributeInt(answerElement, MoodleXML.TAG_FRACTION);
-            String answerText = ParserUtil.getElementText(answerElement, MoodleXML.TAG_TEXT);
-            float tolerance = ParserUtil.getElementFloat(answerElement, MoodleXML.TAG_TOLERANCE);
-            int toleranceType = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_TOLERANCETYPE);
-            int correctAnswerFormat = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_CORRECTANSWERFORMAT);
-            int correctAnswerLength = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_CORRECTANSWERLENGTH);
-            String feedBack = ParserUtil.getElementText(
-                    ParserUtil.getElement(answerElement, MoodleXML.TAG_FEEDBACK),
-                    MoodleXML.TAG_TEXT);
+        int answerFraction = ParserUtil.getAttributeInt(answerElement, MoodleXML.TAG_FRACTION);
+        String answerText = ParserUtil.getElementText(answerElement, MoodleXML.TAG_TEXT);
+        float tolerance = ParserUtil.getElementFloat(answerElement, MoodleXML.TAG_TOLERANCE);
+        int toleranceType = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_TOLERANCETYPE);
+        int correctAnswerFormat = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_CORRECTANSWERFORMAT);
+        int correctAnswerLength = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_CORRECTANSWERLENGTH);
+        String feedBack = ParserUtil.getElementText(
+                ParserUtil.getElement(answerElement, MoodleXML.TAG_FEEDBACK),
+                MoodleXML.TAG_TEXT);
 
-            // add to Object
-            calculatedQuestion.setAnswerShuffle(answerShuffle);
-            calculatedQuestion.setAnswerFraction(answerFraction);
-            calculatedQuestion.setAnswerTxt(answerText);
-            calculatedQuestion.setAnswerTolerance(tolerance);
-            calculatedQuestion.setAnswerToleranceType(toleranceType);
-            calculatedQuestion.setAnswerCorrectAnswerFormat(correctAnswerFormat);
-            calculatedQuestion.setAnswerCorrectAnswerLength(correctAnswerLength);
-            calculatedQuestion.setAnswerFeedbackText(feedBack);
+        // add to Object
+        calculatedQuestion.setAnswerShuffle(answerShuffle);
+        calculatedQuestion.setAnswerFraction(answerFraction);
+        calculatedQuestion.setAnswerTxt(answerText);
+        calculatedQuestion.setAnswerTolerance(tolerance);
+        calculatedQuestion.setAnswerToleranceType(toleranceType);
+        calculatedQuestion.setAnswerCorrectAnswerFormat(correctAnswerFormat);
+        calculatedQuestion.setAnswerCorrectAnswerLength(correctAnswerLength);
+        calculatedQuestion.setAnswerFeedbackText(feedBack);
 
-            Element unitsElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_UNITS);
-            parseUnits(unitsElement);
+        Element unitsElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_UNITS);
+        List<Unit> units = ParserUtil.getUnits(unitsElement);
+        calculatedQuestion.setUnits(units);
 
-            Element dsdElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_DATASETDEFINITIONS);
-            parseDataSetDefinitions(dsdElement);
+        Element dsdElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_DATASETDEFINITIONS);
+        parseDataSetDefinitions(dsdElement);
 
-        } catch (Throwable t) {
-            throw new InvalidQuizFormatException(t);
-        }
-
-    }
-
-    private void parseUnits(Element unitsElement) throws Throwable {
-        List<Element> units = unitsElement.getChildren(MoodleXML.TAG_UNIT);
-        Iterator i = units.iterator();
-
-        while (i.hasNext()) {
-            Element unitElement = (Element) i.next();
-
-            int multiplier = ParserUtil.getElementInt(unitElement, MoodleXML.TAG_MULTIPLIER);
-            String unitName = ParserUtil.getElementText(unitElement, MoodleXML.TAG_UNIT_NAME);
-
-            calculatedQuestion.addUnit(multiplier, unitName);
-        }
     }
 
     private void parseDataSetDefinitions(Element dsdElement) throws Throwable {

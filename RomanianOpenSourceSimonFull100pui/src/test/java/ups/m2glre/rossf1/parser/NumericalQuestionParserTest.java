@@ -36,8 +36,8 @@ public class NumericalQuestionParserTest extends TestCase {
         assertEquals(false, numericalQuestion.isAnswerShuffle());
     }
     public void testUnit() {
-        assertEquals("annee", numericalQuestion.getAnswerUnitName());
-        assertEquals(1, numericalQuestion.getAnswerUnitMultiplier());
+        assertEquals("annee", numericalQuestion.getUnit().getUnitName());
+        assertEquals(1, numericalQuestion.getUnit().getMultiplier());
     }
     public void testFeedback() {
         assertEquals("yo", numericalQuestion.getFeedbackText());

@@ -14,6 +14,7 @@ import universite.toulouse.moodlexmlapi.core.data.Question;
 import ups.m2glre.rossf1.question.CalculatedQuestion;
 import ups.m2glre.rossf1.question.internal.DataSetDefinition;
 import ups.m2glre.rossf1.question.internal.DataSetItem;
+import ups.m2glre.rossf1.question.internal.Unit;
 
 public class CalculatedQuestionParserTest extends TestCase {
     CalculatedQuestion calculatedQuestion;
@@ -31,9 +32,9 @@ public class CalculatedQuestionParserTest extends TestCase {
             assertEquals("", calculatedQuestion.getAnswerFeedbackText());
 
             // test units
-            HashMap<Integer, String> units = calculatedQuestion.getUnits();
-            Integer multiplier = (Integer) units.keySet().toArray()[0];
-            String unitName = units.get(multiplier);
+            List<Unit> units = calculatedQuestion.getUnits();
+            Integer multiplier = units.get(0).getMultiplier();
+            String unitName = units.get(0).getUnitName();
             assertEquals(multiplier, new Integer(1));
             assertEquals(unitName, "m2");
 

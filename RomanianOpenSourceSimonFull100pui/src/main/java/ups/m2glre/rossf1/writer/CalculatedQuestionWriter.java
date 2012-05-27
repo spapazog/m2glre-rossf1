@@ -7,6 +7,7 @@ import universite.toulouse.moodlexmlapi.core.data.Question;
 import ups.m2glre.rossf1.question.CalculatedQuestion;
 import ups.m2glre.rossf1.question.internal.DataSetDefinition;
 import ups.m2glre.rossf1.question.internal.DataSetItem;
+import ups.m2glre.rossf1.question.internal.Unit;
 import ups.m2glre.rossf1.utils.MoodleXML;
 import ups.m2glre.rossf1.utils.WriterUtil;
 
@@ -41,13 +42,13 @@ public class CalculatedQuestionWriter extends QuestionWriter {
 
         //Units
         Element units = new Element(MoodleXML.TAG_UNITS);
-        for (Integer u : q.getUnits().keySet()) {
+        for (Unit u : q.getUnits()) {
             Element unit = new Element(MoodleXML.TAG_UNIT);
 
             unit.addContent(WriterUtil.writeElement(
-                    MoodleXML.TAG_MULTIPLIER, String.valueOf(u)));
+                    MoodleXML.TAG_MULTIPLIER, String.valueOf(u.getMultiplier())));
             unit.addContent(WriterUtil.writeElement(
-                    MoodleXML.TAG_NAME, q.getUnits().get(u)));
+                    MoodleXML.TAG_NAME, u.getUnitName()));
 
             units.addContent(unit);
         }

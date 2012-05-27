@@ -8,6 +8,7 @@ import org.jdom.Attribute;
 import org.jdom.Element;
 
 import ups.m2glre.rossf1.question.internal.Answer;
+import ups.m2glre.rossf1.question.internal.Unit;
 
 public class ParserUtil {
 
@@ -106,5 +107,22 @@ public class ParserUtil {
         }
 
         return answers;
+    }
+
+    public static List<Unit> getUnits(Element unitsElement) throws Throwable {
+        List<Unit> units = new ArrayList<Unit>();
+        List<Element> unitsElementList = unitsElement.getChildren(MoodleXML.TAG_UNIT);
+        Iterator i = unitsElementList.iterator();
+
+        while (i.hasNext()) {
+            Element unitElement = (Element) i.next();
+
+            int multiplier = ParserUtil.getElementInt(unitElement, MoodleXML.TAG_MULTIPLIER);
+            String unitName = ParserUtil.getElementText(unitElement, MoodleXML.TAG_UNIT_NAME);
+
+            Unit unit = new Unit(multiplier, unitName);
+            units.add(unit);
+        }
+        return units;
     }
 }

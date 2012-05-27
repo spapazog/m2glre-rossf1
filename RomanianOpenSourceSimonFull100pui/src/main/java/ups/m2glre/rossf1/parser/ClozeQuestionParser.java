@@ -11,12 +11,8 @@ public class ClozeQuestionParser extends DescriptionQuestionParser {
             throws InvalidQuizFormatException {
         ClozeQuestion q = (ClozeQuestion) question;
 
-        try {
-            //Parse la answer shuffle
-            q.setAnswerShuffle(parseAnswerShuffle(questionXML));
-        } catch (Exception e) {
-            throw new InvalidQuizFormatException(e.getCause());
-        }
+        //Parse la answer shuffle
+        q.setAnswerShuffle(parseAnswerShuffle(questionXML));
     }
 
 }

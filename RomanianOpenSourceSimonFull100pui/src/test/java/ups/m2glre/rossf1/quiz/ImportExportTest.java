@@ -19,8 +19,8 @@ public class ImportExportTest extends TestCase {
             ImportedQuizImpl quiz = (ImportedQuizImpl) quizService.importQuiz(new FileInputStream("src/test/TestFull.xml"));
             assertEquals(10, quiz.getExtractedQuestionCount());
         } catch (Exception e) {
-            fail();
             e.printStackTrace();
+            fail();
         }
     }
     public void testExportQuiz() {
