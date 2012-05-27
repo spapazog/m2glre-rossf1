@@ -58,6 +58,9 @@ public class MoodleXML {
     public static final String TAG_ITEMCOUNT = "itemcount";
     public static final String TAG_NB_ITEMS = "number_of_items";
 
+    /* ShortAnswer question specific */
+    public static final String TAG_USECASE = "usecase";
+
     public static final String TAG_IMAGE64 = "image_base64";
     public static final String TAG_IMAGEURL = "image";
 
