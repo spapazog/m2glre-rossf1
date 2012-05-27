@@ -15,7 +15,7 @@ public class QuestionWriterFactory {
             case category: return new CategoryQuestionWriter();
             case essay: return new EssayQuestionWriter();
             case multichoice: return new MultichoiceQuestionWriter();
-            //case calculated: return new NumericalQuestionParser();
+            case calculated: return new CalculatedQuestionWriter();
             //case shortanswer: return new NumericalQuestionParser();
             //case truefalse: return new NumericalQuestionParser();
         }

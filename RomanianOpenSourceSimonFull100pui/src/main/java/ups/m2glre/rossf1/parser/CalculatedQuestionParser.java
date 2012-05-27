@@ -24,6 +24,10 @@ public class CalculatedQuestionParser extends QuestionParser  {
         calculatedQuestion = (CalculatedQuestion) question;
 
         try {
+            //parse answer shuffle
+            calculatedQuestion.setAnswerShuffle(
+                    parseAnswerShuffle(questionElement));
+
             // parse answer node
             Element answerElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_ANSWER);
 
@@ -33,7 +37,9 @@ public class CalculatedQuestionParser extends QuestionParser  {
             int toleranceType = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_TOLERANCETYPE);
             int correctAnswerFormat = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_CORRECTANSWERFORMAT);
             int correctAnswerLength = ParserUtil.getElementInt(answerElement, MoodleXML.TAG_CORRECTANSWERLENGTH);
-            String feedBack = ParserUtil.getElementText(answerElement, MoodleXML.TAG_FEEDBACK);
+            String feedBack = ParserUtil.getElementText(
+                    ParserUtil.getElement(answerElement, MoodleXML.TAG_FEEDBACK),
+                    MoodleXML.TAG_TEXT);
 
             // add to Object
             calculatedQuestion.setAnswerFraction(answerFraction);
@@ -49,6 +55,7 @@ public class CalculatedQuestionParser extends QuestionParser  {
 
             Element dsdElement = ParserUtil.getElement(questionElement, MoodleXML.TAG_DATASETDEFINITIONS);
             parseDataSetDefinitions(dsdElement);
+
         } catch (Throwable t) {
             throw new InvalidQuizFormatException(t);
         }
@@ -70,32 +77,32 @@ public class CalculatedQuestionParser extends QuestionParser  {
     }
 
     private void parseDataSetDefinitions(Element dsdElement) throws Throwable {
-        List<Element> units = dsdElement.getChildren(MoodleXML.TAG_DATASETDEFINITION);
-        Iterator i = units.iterator();
+        List<Element> dataSetDefinitions = dsdElement.getChildren(MoodleXML.TAG_DATASETDEFINITION);
+        Iterator i = dataSetDefinitions.iterator();
 
         while (i.hasNext()) {
-            Element unitElement = (Element) i.next();
+            Element dataSetDefinitionElement = (Element) i.next();
 
             String status = ParserUtil.getElementText(
-                    ParserUtil.getElement(unitElement, MoodleXML.TAG_STATUS),
+                    ParserUtil.getElement(dataSetDefinitionElement, MoodleXML.TAG_STATUS),
                     MoodleXML.TAG_TEXT);
 
             String name = ParserUtil.getElementText(
-                    ParserUtil.getElement(unitElement, MoodleXML.TAG_NAME),
+                    ParserUtil.getElement(dataSetDefinitionElement, MoodleXML.TAG_NAME),
                     MoodleXML.TAG_TEXT);
 
-            String type = ParserUtil.getElementText(unitElement, MoodleXML.TAG_TYPE);
+            String type = ParserUtil.getElementText(dataSetDefinitionElement, MoodleXML.TAG_TYPE);
             String distribution = ParserUtil.getElementText(
-                    ParserUtil.getElement(unitElement, MoodleXML.TAG_DISTRIBUTION),
+                    ParserUtil.getElement(dataSetDefinitionElement, MoodleXML.TAG_DISTRIBUTION),
                     MoodleXML.TAG_TEXT);
             float minimum = ParserUtil.getElementFloat(
-                    ParserUtil.getElement(unitElement, MoodleXML.TAG_MINIMUM),
+                    ParserUtil.getElement(dataSetDefinitionElement, MoodleXML.TAG_MINIMUM),
                     MoodleXML.TAG_TEXT);
             float maximum = ParserUtil.getElementFloat(
-                    ParserUtil.getElement(unitElement, MoodleXML.TAG_MAXIMUM),
+                    ParserUtil.getElement(dataSetDefinitionElement, MoodleXML.TAG_MAXIMUM),
                     MoodleXML.TAG_TEXT);
             int decimals = ParserUtil.getElementInt(
-                    ParserUtil.getElement(unitElement, MoodleXML.TAG_DECIMALS),
+                    ParserUtil.getElement(dataSetDefinitionElement, MoodleXML.TAG_DECIMALS),
                     MoodleXML.TAG_TEXT);
 
             DataSetDefinition dataSetDefinition  = new DataSetDefinition();
@@ -107,9 +114,9 @@ public class CalculatedQuestionParser extends QuestionParser  {
             dataSetDefinition.setMaximum(maximum);
             dataSetDefinition.setDecimals(decimals);
 
-            Element dsiElement = ParserUtil.getElement(dsdElement, MoodleXML.TAG_DATASETITEMS);
+            Element dsiElement = ParserUtil.getElement(dataSetDefinitionElement, MoodleXML.TAG_DATASETITEMS);
             List<DataSetItem> items = parseDataSetItems(dsiElement);
-            dataSetDefinition.setItemCount(items.size());
+            dataSetDefinition.setItem(items);
 
             calculatedQuestion.addDefinition(dataSetDefinition);
 

@@ -17,15 +17,20 @@ public class CalculatedQuestion extends GenericQuestion {
     int answerCorrectAnswerFormat;
     int answerCorrectAnswerLength;
     String answerFeedbackText;
-
+    boolean answerShuffle;
     /*
      * Units represents all the unit <unit> node
      * key of the HashMap is the multiplier value, value is name
      */
     HashMap<Integer, String> units = new HashMap<Integer, String>();
-
     List<DataSetDefinition> definitions = new ArrayList<DataSetDefinition>();
 
+    public final boolean isAnswerShuffle() {
+        return answerShuffle;
+    }
+    public final void setAnswerShuffle(boolean answerShuffle) {
+        this.answerShuffle = answerShuffle;
+    }
     public int getAnswerFraction() {
         return answerFraction;
     }

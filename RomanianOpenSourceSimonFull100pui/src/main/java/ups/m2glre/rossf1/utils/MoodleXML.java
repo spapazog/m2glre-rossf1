@@ -55,6 +55,8 @@ public class MoodleXML {
     public static final String TAG_DATASETITEM = "dataset_item";
     public static final String TAG_NUMBER = "number";
     public static final String TAG_VALUE = "value";
+    public static final String TAG_ITEMCOUNT = "itemcount";
+    public static final String TAG_NB_ITEMS = "number_of_items";
 
     public static final String TAG_IMAGE64 = "image_base64";
     public static final String TAG_IMAGEURL = "image";

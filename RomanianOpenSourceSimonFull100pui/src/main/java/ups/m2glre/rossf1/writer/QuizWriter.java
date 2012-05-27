@@ -33,16 +33,15 @@ public class QuizWriter {
     }
 
     public OutputStream getOutputStream() {
-        OutputStream os = null;
-        XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
         try {
-            //sortie.output(document, os);
-            sortie.output(document, new FileOutputStream("yo.xml"));
+            OutputStream os = new FileOutputStream("target/export.xml");
+            XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
+            sortie.output(document, os);
+            return os;
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return os;
+        return null;
     }
 
 }
