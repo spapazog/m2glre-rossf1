@@ -1,6 +1,5 @@
 package ups.m2glre.rossf1.parser;
 
-import java.util.Iterator;
 import java.util.List;
 
 import org.jdom.Element;
@@ -9,6 +8,7 @@ import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
 import ups.m2glre.rossf1.question.MultichoiceQuestion;
 import ups.m2glre.rossf1.question.internal.Answer;
 import ups.m2glre.rossf1.utils.MoodleXML;
+import ups.m2glre.rossf1.utils.ParserUtil;
 
 /**
  * @author Simon Joussellin
@@ -21,40 +21,41 @@ public final class MultichoiceQuestionParser extends QuestionParser{
 
         MultichoiceQuestion quest = (MultichoiceQuestion) question;
 
+        List<Answer> answers;
+        boolean answerShuffle;
+        boolean single;
+        String correctFeedbackText;
+        String partiallyFeedbackText;
+        String incorrectFeedbackText;
+        String answerNumbering;
+
+        try {
             //Parse les answers
-            List answers = questionXML.getChildren(MoodleXML.TAG_ANSWER);
-            Iterator i = answers.iterator();
-
-            while (i.hasNext()) {
-                Float fraction;
-                String answerText;
-                String feedbackText;
-                Element answer = (Element) i.next();
-
-                fraction = Float.valueOf(answer.
-                        getAttributeValue(MoodleXML.TAG_FRACTION));
-                answerText = answer.getChild(MoodleXML.TAG_TEXT).getValue();
-                feedbackText = answer.getChild(MoodleXML.TAG_FEEDBACK).
-                        getChild(MoodleXML.TAG_TEXT).getValue();
-                quest.getAnswers().add(
-                        new Answer(fraction, answerText, feedbackText));
-            }
-
-            quest.setAnswerShuffle(parseAnswerShuffle(questionXML));
-
-            //Parse le single
-            quest.setSingle(questionXML.
-                    getChild(MoodleXML.TAG_SINGLE).getValue() == "true");
-            quest.setCorrectfeedbackText(questionXML.
+            answers = ParserUtil.getAnswers(questionXML);
+            answerShuffle = parseAnswerShuffle(questionXML);
+            single = questionXML.
+                   getChild(MoodleXML.TAG_SINGLE).getValue() == "true";
+            correctFeedbackText = questionXML.
                     getChild(MoodleXML.TAG_CORRECTFB).
-                    getChild(MoodleXML.TAG_TEXT).getValue());
-            quest.setPartiallyfeedbackText(questionXML.
+                    getChild(MoodleXML.TAG_TEXT).getValue();
+            partiallyFeedbackText = questionXML.
                     getChild(MoodleXML.TAG_PARTCORRECTFB).
-                    getChild(MoodleXML.TAG_TEXT).getValue());
-            quest.setIncorrectfeedbackText(questionXML.
+                    getChild(MoodleXML.TAG_TEXT).getValue();
+            incorrectFeedbackText = questionXML.
                     getChild(MoodleXML.TAG_INCORRECTFB).
-                    getChild(MoodleXML.TAG_TEXT).getValue());
-            quest.setAnswernumbering(questionXML.
-                    getChild(MoodleXML.TAG_ANSWERNUMBERING).getValue());
+                    getChild(MoodleXML.TAG_TEXT).getValue();
+            answerNumbering = questionXML.
+                    getChild(MoodleXML.TAG_ANSWERNUMBERING).getValue();
+        } catch (Throwable t) {
+            throw new InvalidQuizFormatException(t);
+        }
+
+        quest.setAnswers(answers);
+        quest.setAnswerShuffle(answerShuffle);
+        quest.setSingle(single);
+        quest.setCorrectfeedbackText(correctFeedbackText);
+        quest.setPartiallyfeedbackText(partiallyFeedbackText);
+        quest.setIncorrectfeedbackText(incorrectFeedbackText);
+        quest.setAnswernumbering(answerNumbering);
     }
 }
