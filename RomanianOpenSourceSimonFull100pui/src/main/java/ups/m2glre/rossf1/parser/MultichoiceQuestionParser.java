@@ -7,7 +7,7 @@ import org.jdom.Element;
 
 import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
 import ups.m2glre.rossf1.question.MultichoiceQuestion;
-import ups.m2glre.rossf1.question.MultichoiceQuestion.MultichoiceAnswer;
+import ups.m2glre.rossf1.question.internal.Answer;
 import ups.m2glre.rossf1.utils.MoodleXML;
 
 /**
@@ -36,8 +36,8 @@ public final class MultichoiceQuestionParser extends QuestionParser{
                 answerText = answer.getChild(MoodleXML.TAG_TEXT).getValue();
                 feedbackText = answer.getChild(MoodleXML.TAG_FEEDBACK).
                         getChild(MoodleXML.TAG_TEXT).getValue();
-                quest.getAnswers().add(quest.new MultichoiceAnswer(
-                        fraction, answerText, feedbackText));
+                quest.getAnswers().add(
+                        new Answer(fraction, answerText, feedbackText));
             }
 
             quest.setAnswerShuffle(parseAnswerShuffle(questionXML));
@@ -56,9 +56,5 @@ public final class MultichoiceQuestionParser extends QuestionParser{
                     getChild(MoodleXML.TAG_TEXT).getValue());
             quest.setAnswernumbering(questionXML.
                     getChild(MoodleXML.TAG_ANSWERNUMBERING).getValue());
-
-
-
     }
-
 }

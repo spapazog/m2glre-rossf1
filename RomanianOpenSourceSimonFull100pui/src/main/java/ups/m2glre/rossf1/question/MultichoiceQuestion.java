@@ -2,6 +2,8 @@ package ups.m2glre.rossf1.question;
 
 import java.util.ArrayList;
 
+import ups.m2glre.rossf1.question.internal.Answer;
+
 /**
 *
 * @author Simon Joussellin
@@ -15,8 +17,7 @@ public class MultichoiceQuestion extends GenericQuestion{
     private String incorrectfeedbackText;
     private String generalfeedbackText;
     private String answernumbering;
-    private ArrayList<MultichoiceAnswer> answers = 
-            new ArrayList<MultichoiceQuestion.MultichoiceAnswer>();
+    private ArrayList<Answer> answers = new ArrayList<Answer>();
 
     public String getCorrectfeedbackText() {
         return correctfeedbackText;
@@ -60,43 +61,10 @@ public class MultichoiceQuestion extends GenericQuestion{
     public void setAnswerShuffle(boolean answerShuffle) {
         this.answerShuffle = answerShuffle;
     }
-    public ArrayList<MultichoiceAnswer> getAnswers() {
+    public ArrayList<Answer> getAnswers() {
         return answers;
     }
-    public void setAnswers(ArrayList<MultichoiceAnswer> answers) {
+    public void setAnswers(ArrayList<Answer> answers) {
         this.answers = answers;
-    }
-
-    public class MultichoiceAnswer {
-        private Float fraction;
-        private String text;
-        private String feedbackText;
-
-        /**
-         * @return the fraction
-         */
-        public final Float getFraction() {
-            return fraction;
-        }
-
-        /**
-         * @return the text
-         */
-        public final String getText() {
-            return text;
-        }
-
-        /**
-         * @return the feedbackText
-         */
-        public final String getFeedbackText() {
-            return feedbackText;
-        }
-
-        public MultichoiceAnswer(Float f, String t, String fe) {
-            fraction = f;
-            text = t;
-            feedbackText = fe;
-        }
     }
 }

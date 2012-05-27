@@ -4,103 +4,105 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import ups.m2glre.rossf1.question.internal.DataSetDefinition;
+
 /** Calculated question model
  */
 public class CalculatedQuestion extends GenericQuestion {
 
-	int answerFraction;
-	String answerTxt;
-	float answerTolerance;
-	int answerToleranceType;
-	int answerCorrectAnswerFormat;
-	int answerCorrectAnswerLength;
-	String answerFeedbackText;
-	
-	/*
-	 * Units represents all the unit <unit> node
-	 * key of the HashMap is the multiplier value, value is name
-	 */
-	HashMap<Integer, String> units = new HashMap<Integer, String>();
+    int answerFraction;
+    String answerTxt;
+    float answerTolerance;
+    int answerToleranceType;
+    int answerCorrectAnswerFormat;
+    int answerCorrectAnswerLength;
+    String answerFeedbackText;
 
-	List<DataSetDefinition> definitions = new ArrayList<DataSetDefinition>();
+    /*
+     * Units represents all the unit <unit> node
+     * key of the HashMap is the multiplier value, value is name
+     */
+    HashMap<Integer, String> units = new HashMap<Integer, String>();
 
-	public int getAnswerFraction() {
-		return answerFraction;
-	}
+    List<DataSetDefinition> definitions = new ArrayList<DataSetDefinition>();
 
-	public void setAnswerFraction(int answerFraction) {
-		this.answerFraction = answerFraction;
-	}
-	
-	public String getAnswerTxt() {
-		return answerTxt;
-	}
+    public int getAnswerFraction() {
+        return answerFraction;
+    }
 
-	public void setAnswerTxt(String answerTxt) {
-		this.answerTxt = answerTxt;
-	}
+    public void setAnswerFraction(int answerFraction) {
+        this.answerFraction = answerFraction;
+    }
 
-	public float getAnswerTolerance() {
-		return answerTolerance;
-	}
+    public String getAnswerTxt() {
+        return answerTxt;
+    }
 
-	public void setAnswerTolerance(float tolerance) {
-		this.answerTolerance = tolerance;
-	}
+    public void setAnswerTxt(String answerTxt) {
+        this.answerTxt = answerTxt;
+    }
 
-	public int getAnswerToleranceType() {
-		return answerToleranceType;
-	}
+    public float getAnswerTolerance() {
+        return answerTolerance;
+    }
 
-	public void setAnswerToleranceType(int toleranceType) {
-		this.answerToleranceType = toleranceType;
-	}
+    public void setAnswerTolerance(float tolerance) {
+        this.answerTolerance = tolerance;
+    }
 
-	public int getAnswerCorrectAnswerFormat() {
-		return answerCorrectAnswerFormat;
-	}
+    public int getAnswerToleranceType() {
+        return answerToleranceType;
+    }
 
-	public void setAnswerCorrectAnswerFormat(int correctAnswerFormat) {
-		this.answerCorrectAnswerFormat = correctAnswerFormat;
-	}
+    public void setAnswerToleranceType(int toleranceType) {
+        this.answerToleranceType = toleranceType;
+    }
 
-	public int getAnswerCorrectAnswerLength() {
-		return answerCorrectAnswerLength;
-	}
+    public int getAnswerCorrectAnswerFormat() {
+        return answerCorrectAnswerFormat;
+    }
 
-	public void setAnswerCorrectAnswerLength(int correctAnswerLength) {
-		this.answerCorrectAnswerLength = correctAnswerLength;
-	}
+    public void setAnswerCorrectAnswerFormat(int correctAnswerFormat) {
+        this.answerCorrectAnswerFormat = correctAnswerFormat;
+    }
 
-	public String getAnswerFeedbackText() {
-		return answerFeedbackText;
-	}
+    public int getAnswerCorrectAnswerLength() {
+        return answerCorrectAnswerLength;
+    }
 
-	public void setAnswerFeedbackText(String feedbackText) {
-		this.answerFeedbackText = feedbackText;
-	}
-	
-	public HashMap<Integer, String> getUnits() {
-		return units;
-	}
-	
-	public void setUnits(HashMap<Integer, String> units) {
-		this.units = units;
-	}
-	
-	public void addUnit(int mult, String unitName) {
-		units.put(mult, unitName);
-	}
+    public void setAnswerCorrectAnswerLength(int correctAnswerLength) {
+        this.answerCorrectAnswerLength = correctAnswerLength;
+    }
 
-	public List<DataSetDefinition> getDefinitions() {
-		return definitions;
-	}
-	
-	public void addDefinition(DataSetDefinition dsd) {
-		definitions.add(dsd);
-	}
+    public String getAnswerFeedbackText() {
+        return answerFeedbackText;
+    }
 
-	public void setDefinitions(List<DataSetDefinition> definitions) {
-		this.definitions = definitions;
-	}
+    public void setAnswerFeedbackText(String feedbackText) {
+        this.answerFeedbackText = feedbackText;
+    }
+
+    public HashMap<Integer, String> getUnits() {
+        return units;
+    }
+
+    public void setUnits(HashMap<Integer, String> units) {
+        this.units = units;
+    }
+
+    public void addUnit(int mult, String unitName) {
+        units.put(mult, unitName);
+    }
+
+    public List<DataSetDefinition> getDefinitions() {
+        return definitions;
+    }
+
+    public void addDefinition(DataSetDefinition dsd) {
+        definitions.add(dsd);
+    }
+
+    public void setDefinitions(List<DataSetDefinition> definitions) {
+        this.definitions = definitions;
+    }
 }

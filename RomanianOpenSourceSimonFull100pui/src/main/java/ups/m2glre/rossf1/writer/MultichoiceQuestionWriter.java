@@ -4,9 +4,8 @@ import org.jdom.Attribute;
 import org.jdom.Element;
 
 import universite.toulouse.moodlexmlapi.core.data.Question;
-import ups.m2glre.rossf1.question.CategoryQuestion;
 import ups.m2glre.rossf1.question.MultichoiceQuestion;
-import ups.m2glre.rossf1.question.MultichoiceQuestion.MultichoiceAnswer;
+import ups.m2glre.rossf1.question.internal.Answer;
 import ups.m2glre.rossf1.utils.MoodleXML;
 
 /**
@@ -52,7 +51,7 @@ public class MultichoiceQuestionWriter extends QuestionWriter {
         questionXML.addContent(answerNumbering);
 
         //Answers
-        for (MultichoiceAnswer a : q.getAnswers()) {
+        for (Answer a : q.getAnswers()) {
             Element answer = new Element(MoodleXML.TAG_ANSWER);
             answer.setAttribute(new Attribute(MoodleXML.TAG_FRACTION,
                     String.valueOf(a.getFraction())));
