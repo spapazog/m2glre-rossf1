@@ -12,8 +12,8 @@ import org.jdom.input.SAXBuilder;
 
 import universite.toulouse.moodlexmlapi.core.data.Question;
 import ups.m2glre.rossf1.question.CalculatedQuestion;
-import ups.m2glre.rossf1.question.DataSetDefinition;
-import ups.m2glre.rossf1.question.DataSetItem;
+import ups.m2glre.rossf1.question.internal.DataSetDefinition;
+import ups.m2glre.rossf1.question.internal.DataSetItem;
 
 public class CalculatedQuestionParserTest extends TestCase {
     CalculatedQuestion calculatedQuestion;

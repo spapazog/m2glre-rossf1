@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quiz>
-
-    <!-- question: 37095  -->
     <question type="calculated">
         <name>
             <text>Aire du cercle (pas du carré)</text>
@@ -16,6 +14,7 @@
         <defaultgrade>1</defaultgrade>
         <penalty>0.1</penalty>
         <hidden>0</hidden>
+        
         <shuffleanswers>0</shuffleanswers>
         <answer fraction="100">
             <text>3.14 * {R}*{R}</text>
