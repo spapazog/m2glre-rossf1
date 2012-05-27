@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+    <!-- question: 37095  -->
+    <question type="calculated">
+        <name>
+            <text>Aire du cercle (pas du carré)</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>Calcul de l'aire du cercle ayant pour rayon {R}</text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1</defaultgrade>
+        <penalty>0.1</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>0</shuffleanswers>
+        <answer fraction="100">
+            <text>3.14 * {R}*{R}</text>
+            <tolerance>0.01</tolerance>
+            <tolerancetype>1</tolerancetype>
+            <correctanswerformat>1</correctanswerformat>
+            <correctanswerlength>1</correctanswerlength>
+            <feedback>
+                <text></text>
+            </feedback>
+        </answer>
+        <units>
+            <unit>
+                <multiplier>1</multiplier>
+                <unit_name>m2</unit_name>
+            </unit>
+        </units>
+        <dataset_definitions>
+            <dataset_definition>
+                <status>
+                    <text>shared</text>
+                </status>
+                <name>
+                    <text>R</text>
+                </name>
+                <type>calculated</type>
+                <distribution>
+                    <text>uniform</text>
+                </distribution>
+                <minimum>
+                    <text>1.0</text>
+                </minimum>
+                <maximum>
+                    <text>10.0</text>
+                </maximum>
+                <decimals>
+                    <text>1</text>
+                </decimals>
+                <itemcount>10</itemcount>
+                <dataset_items>
+                    <dataset_item>
+                        <number>1</number>
+                        <value>6.9</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>2</number>
+                        <value>9.7</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>3</number>
+                        <value>5.2</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>4</number>
+                        <value>7.1</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>5</number>
+                        <value>4.8</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>6</number>
+                        <value>6.0</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>7</number>
+                        <value>6.3</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>8</number>
+                        <value>5.0</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>9</number>
+                        <value>6.2</value>
+                    </dataset_item>
+                    <dataset_item>
+                        <number>10</number>
+                        <value>2.6</value>
+                    </dataset_item>
+                </dataset_items>
+                <number_of_items>10</number_of_items>
+            </dataset_definition>
+        </dataset_definitions>
+    </question>
+    </quiz>
