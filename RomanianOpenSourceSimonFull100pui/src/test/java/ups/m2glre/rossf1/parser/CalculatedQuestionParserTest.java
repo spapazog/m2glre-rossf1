@@ -1,7 +1,6 @@
 package ups.m2glre.rossf1.parser;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.List;
 
 import junit.framework.TestCase;
@@ -54,9 +53,9 @@ public class CalculatedQuestionParserTest extends TestCase {
             List<DataSetItem> items = def.getItems();
             assertEquals(10, items.size());
 
-            for (int i = 0 ; i < 10 ; i++) {
+            for (int i = 0 ; i < 10 ; i++)
                 assertEquals(i+1, items.get(i).getNumber());
-            }
+
             assertEquals(6.9, items.get(0).getValue(), 0.001);
             assertEquals(9.7, items.get(1).getValue(), 0.001);
             assertEquals(5.2, items.get(2).getValue(), 0.001);
@@ -67,14 +66,11 @@ public class CalculatedQuestionParserTest extends TestCase {
             assertEquals(5.0, items.get(7).getValue(), 0.001);
             assertEquals(6.2, items.get(8).getValue(), 0.001);
             assertEquals(2.6, items.get(9).getValue(), 0.001);
-
-
         } catch (Exception e) {
             System.out.println(e.getCause().getMessage());
             e.printStackTrace();
             fail();
         }
-
     }
 
     private Question loadFile(String fileName) throws Exception {

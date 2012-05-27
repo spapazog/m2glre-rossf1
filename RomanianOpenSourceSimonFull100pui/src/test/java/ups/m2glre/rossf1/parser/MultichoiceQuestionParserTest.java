@@ -33,7 +33,7 @@ public class MultichoiceQuestionParserTest extends TestCase{
     public void testAnswer() {
         assertEquals(4, multichoiceQuestion.getAnswers().size());
         assertEquals(33.333f, multichoiceQuestion.getAnswers().get(2).getFraction());
-        assertEquals("Une architecture client serveur est une architecture N-tiers", 
+        assertEquals("Une architecture client serveur est une architecture N-tiers",
                 multichoiceQuestion.getAnswers().get(1).getText());
     }
     public void testUnit() {

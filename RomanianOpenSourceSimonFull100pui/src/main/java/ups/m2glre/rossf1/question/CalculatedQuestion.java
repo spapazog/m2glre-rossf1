@@ -1,7 +1,6 @@
 package ups.m2glre.rossf1.question;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import ups.m2glre.rossf1.question.internal.DataSetDefinition;
@@ -12,7 +11,7 @@ import ups.m2glre.rossf1.question.internal.Unit;
 public class CalculatedQuestion extends GenericQuestion {
 
     int answerFraction;
-    String answerTxt;
+    String answerText;
     float answerTolerance;
     int answerToleranceType;
     int answerCorrectAnswerFormat;
@@ -41,11 +40,11 @@ public class CalculatedQuestion extends GenericQuestion {
     }
 
     public String getAnswerTxt() {
-        return answerTxt;
+        return answerText;
     }
 
     public void setAnswerTxt(String answerTxt) {
-        this.answerTxt = answerTxt;
+        this.answerText = answerTxt;
     }
 
     public float getAnswerTolerance() {

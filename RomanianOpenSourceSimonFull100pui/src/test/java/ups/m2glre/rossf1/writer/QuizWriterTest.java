@@ -20,7 +20,7 @@ public class QuizWriterTest extends TestCase {
         qp = new QuizParser();
 
         try {
-            document = new SAXBuilder().build(new File("src/test/TestCalculatedQuestion.xml"));
+            document = new SAXBuilder().build(new File("src/test/TestFull.xml"));
             q = (QuizImpl) qp.parseQuiz(document.getRootElement());
             new QuizWriter(q).getOutputStream();
         } catch (Exception e) {

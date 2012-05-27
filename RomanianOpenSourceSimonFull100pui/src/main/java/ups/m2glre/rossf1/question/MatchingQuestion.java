@@ -7,19 +7,19 @@ import java.util.HashMap;
 
 public class MatchingQuestion extends GenericQuestion {
 
-    HashMap<String, String> subquestions = new HashMap<String, String>();
-    boolean suffleAnswer;
+    private HashMap<String, String> subquestions = new HashMap<String, String>();
+    private boolean shuffleAnswer;
 
     public void addSubquestion(String text, String answer) {
         subquestions.put(text, answer);
     }
 
     public boolean isSuffleAnswer() {
-        return suffleAnswer;
+        return shuffleAnswer;
     }
 
     public void setSuffleAnswer(boolean suffleAnswer) {
-        this.suffleAnswer = suffleAnswer;
+        this.shuffleAnswer = suffleAnswer;
     }
 
     public HashMap<String, String> getSubquestion() {

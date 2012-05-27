@@ -16,8 +16,8 @@ public class QuestionWriterFactory {
             case essay: return new EssayQuestionWriter();
             case multichoice: return new MultichoiceQuestionWriter();
             case calculated: return new CalculatedQuestionWriter();
-            //case shortanswer: return new NumericalQuestionParser();
-            //case truefalse: return new NumericalQuestionParser();
+            case shortanswer: return new ShortAnswerQuestionWriter();
+            case truefalse: return new TrueFalseQuestionWriter();
         }
         throw new Exception("Not implemented question type");
     }

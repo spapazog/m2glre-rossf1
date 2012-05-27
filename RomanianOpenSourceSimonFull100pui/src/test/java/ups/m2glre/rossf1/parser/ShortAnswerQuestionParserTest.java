@@ -7,7 +7,6 @@ import org.jdom.Document;
 import org.jdom.input.SAXBuilder;
 
 import ups.m2glre.rossf1.question.ShortAnswerQuestion;
-import ups.m2glre.rossf1.question.internal.Answer;
 
 public class ShortAnswerQuestionParserTest extends TestCase {
     private ShortAnswerQuestionParser shortAnswerQuestionParser;

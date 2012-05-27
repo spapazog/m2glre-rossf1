@@ -9,9 +9,9 @@ import ups.m2glre.rossf1.question.internal.Answer;
  */
 public class ShortAnswerQuestion extends GenericQuestion {
 
-    boolean answerShuffle;
-    int useCase;
-    List<Answer> answers = new ArrayList<Answer>();
+    private boolean answerShuffle;
+    private int useCase;
+    private List<Answer> answers = new ArrayList<Answer>();
 
     public final boolean isAnswerShuffle() {
         return answerShuffle;

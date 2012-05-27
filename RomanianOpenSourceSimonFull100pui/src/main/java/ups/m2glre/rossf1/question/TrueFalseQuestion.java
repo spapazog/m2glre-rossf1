@@ -9,8 +9,8 @@ import ups.m2glre.rossf1.question.internal.Answer;
  */
 public class TrueFalseQuestion extends GenericQuestion {
 
-    boolean answerShuffle;
-    List<Answer> answers = new ArrayList<Answer>(2);
+    private boolean answerShuffle;
+    private List<Answer> answers = new ArrayList<Answer>(2);
 
     public final boolean isAnswerShuffle() {
         return answerShuffle;

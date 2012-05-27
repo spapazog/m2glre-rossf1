@@ -2,7 +2,6 @@ package ups.m2glre.rossf1.parser;
 
 import org.jdom.Element;
 
-import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
 import ups.m2glre.rossf1.question.CategoryQuestion;
 import ups.m2glre.rossf1.utils.MoodleXML;
 import ups.m2glre.rossf1.utils.ParserUtil;
