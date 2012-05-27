@@ -5,12 +5,11 @@ import java.util.List;
 import org.jdom.Element;
 
 import universite.toulouse.moodlexmlapi.core.InvalidQuizFormatException;
-import ups.m2glre.rossf1.question.ShortAnswerQuestion;
+import ups.m2glre.rossf1.question.TrueFalseQuestion;
 import ups.m2glre.rossf1.question.internal.Answer;
-import ups.m2glre.rossf1.utils.MoodleXML;
 import ups.m2glre.rossf1.utils.ParserUtil;
 
-/** ShortAnswer question parser
+/** TrueFalse question parser
  * XML representation is  :
     <question type="shortanswer">
         <!-- generic nodes-->
@@ -30,29 +29,29 @@ import ups.m2glre.rossf1.utils.ParserUtil;
         </answer>
     </question>
  */
-public class ShortAnswerQuestionParser extends QuestionParser  {
+public class TrueFalseQuestionParser extends QuestionParser  {
 
-    private ShortAnswerQuestion shortAnswerQuestion;
+    private TrueFalseQuestion trueFalseQuestion;
 
     @Override
     public final void parseSpecializedQuestion(Element questionElement)
             throws InvalidQuizFormatException {
 
-        shortAnswerQuestion = (ShortAnswerQuestion) question;
+        trueFalseQuestion = (TrueFalseQuestion) question;
         boolean answerShuffle;
-        int useCase;
         List<Answer> answers;
 
         try {
             answerShuffle = parseAnswerShuffle(questionElement);
-            useCase = ParserUtil.getElementInt(questionElement, MoodleXML.TAG_USECASE);
             answers = ParserUtil.getAnswers(questionElement);
+            if (answers.size() != 2)
+                throw new Throwable("TrueFalse question should have 2 answers");
+
         } catch (Throwable t) {
             throw new InvalidQuizFormatException(t);
         }
 
-        shortAnswerQuestion.setAnswerShuffle(answerShuffle);
-        shortAnswerQuestion.setUseCase(useCase);
-        shortAnswerQuestion.setAnswer(answers);
+        trueFalseQuestion.setAnswerShuffle(answerShuffle);
+        trueFalseQuestion.setAnswer(answers);
     }
 }
