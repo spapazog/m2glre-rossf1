@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+    <question type="shortanswer">
+        <name>
+            <text>Premier langage Orienté Objet</text>
+        </name>
+        <questiontext format="moodle_auto_format">
+            <text>Quel est le premier langage Orienté Objet ?</text>
+        </questiontext>
+        <image></image>
+        <generalfeedback>
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1</defaultgrade>
+        <penalty>0.1</penalty>
+        <hidden>0</hidden>
+        <shuffleanswers>0</shuffleanswers>
+        <usecase>0</usecase>
+        <answer fraction="100">
+            <text>Simula 66</text>
+            <feedback>
+                <text>Parfait !</text>
+            </feedback>
+        </answer>
+        <answer fraction="75">
+            <text>Simula</text>
+            <feedback>
+                <text>Oui, plus précisément Simula 66</text>
+            </feedback>
+        </answer>
+    </question>
+</quiz>

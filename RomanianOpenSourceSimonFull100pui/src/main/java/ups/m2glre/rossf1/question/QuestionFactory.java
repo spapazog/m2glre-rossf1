@@ -18,8 +18,8 @@ public class QuestionFactory {
             case essay: return new EssayQuestion();
             case multichoice: return new MultichoiceQuestion();
             case calculated: return new CalculatedQuestion();
-            //case shortanswer: return new NumericalQuestion();
-            //ARNAUD: case truefalse: return new NumericalQuestion();
+            case shortanswer: return new ShortAnswerQuestion();
+            case truefalse: return new TrueFalseQuestion();
         }
         throw new Exception("Not implemented question type");
     }

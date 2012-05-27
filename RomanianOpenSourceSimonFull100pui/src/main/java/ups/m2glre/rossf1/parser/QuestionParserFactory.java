@@ -18,8 +18,8 @@ public class QuestionParserFactory {
             case essay: return new EssayQuestionParser();
             case multichoice: return new MultichoiceQuestionParser();
             case calculated: return new CalculatedQuestionParser();
-            //case shortanswer: return new NumericalQuestionParser();
-            //case truefalse: return new NumericalQuestionParser();
+            case shortanswer: return new ShortAnswerQuestionParser();
+            case truefalse: return new TrueFalseQuestionParser();
         }
         throw new Exception("Not implemented question type");
     }

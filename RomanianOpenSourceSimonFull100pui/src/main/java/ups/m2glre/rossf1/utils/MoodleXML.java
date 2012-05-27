@@ -60,5 +60,6 @@ public class MoodleXML {
 
     public static final String TAG_IMAGE64 = "image_base64";
     public static final String TAG_IMAGEURL = "image";
+    public static final String TAG_USECASE = "usecase";
 
 }
