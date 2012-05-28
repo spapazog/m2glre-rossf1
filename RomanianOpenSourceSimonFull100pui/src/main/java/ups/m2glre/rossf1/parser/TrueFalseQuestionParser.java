@@ -9,8 +9,17 @@ import ups.m2glre.rossf1.question.TrueFalseQuestion;
 import ups.m2glre.rossf1.question.internal.Answer;
 import ups.m2glre.rossf1.utils.ParserUtil;
 
+/**
+ * TrueFalse Question Parser.
+ *
+ */
 public class TrueFalseQuestionParser extends QuestionParser  {
 
+    /**
+     * Parser of the specialized nodes for TrueFalseQuestion
+     * @param questionElement node element of the question
+     * @throws exception if the format of the XML is not valid
+     */
     @Override
     public final void parseSpecializedQuestion(Element questionElement)
             throws InvalidQuizFormatException {

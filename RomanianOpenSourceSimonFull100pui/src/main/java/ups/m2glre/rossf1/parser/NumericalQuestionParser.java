@@ -9,8 +9,17 @@ import ups.m2glre.rossf1.question.internal.Unit;
 import ups.m2glre.rossf1.utils.MoodleXML;
 import ups.m2glre.rossf1.utils.ParserUtil;
 
+/**
+ * Numerical Question Parser.
+ *
+ */
 public class NumericalQuestionParser extends QuestionParser {
-
+    
+    /**
+     * Parser of the specialized nodes for NumericalQuestionQuestion
+     * @param questionElement node element of the question
+     * @throws exception if the format of the XML is not valid
+     */
     public void parseSpecializedQuestion(Element questionXML)
             throws Throwable {
         NumericalQuestion q = (NumericalQuestion) question;

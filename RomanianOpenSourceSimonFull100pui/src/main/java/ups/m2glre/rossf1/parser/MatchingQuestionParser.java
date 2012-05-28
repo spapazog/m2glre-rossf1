@@ -20,8 +20,16 @@ import ups.m2glre.rossf1.utils.ParserUtil;
  */
 public class MatchingQuestionParser extends QuestionParser  {
 
+    /**
+     * MachingQuestion object representation.
+     */
     private MatchingQuestion matchingQuestion;
 
+    /**
+     * Parser of the specialized nodes for MatchingQuestion
+     * @param questionElement node element of the question
+     * @throws exception if the format of the XML is not valid
+     */
     @Override
     public final void parseSpecializedQuestion(Element questionElement)
             throws Throwable {

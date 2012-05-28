@@ -7,7 +7,18 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 import ups.m2glre.rossf1.utils.MoodleXML;
 import ups.m2glre.rossf1.utils.ParserUtil;
 
+/**
+ * Question Parser factory.
+ * @author Gabriel
+ *
+ */
 public class QuestionParserFactory {
+    /**
+     * Getting the matched instance based on the question type
+     * @param node element of the question
+     * @return the QuestionParser instance
+     * @throws exception if the format of the XML is not valid
+     */
     public static QuestionParser getQuestionParser(Element questionXML)
         throws Exception {
 

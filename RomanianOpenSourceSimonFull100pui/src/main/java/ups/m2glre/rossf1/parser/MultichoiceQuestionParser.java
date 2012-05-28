@@ -11,10 +11,16 @@ import ups.m2glre.rossf1.utils.MoodleXML;
 import ups.m2glre.rossf1.utils.ParserUtil;
 
 /**
+ * Multichoice Question Parser
  * @author Simon Joussellin
  */
 public final class MultichoiceQuestionParser extends QuestionParser{
 
+    /**
+     * Parser of the specialized nodes for MultichoiceQuestion
+     * @param questionElement node element of the question
+     * @throws exception if the format of the XML is not valid
+     */
     @Override
     public void parseSpecializedQuestion(Element questionXML)
             throws InvalidQuizFormatException {

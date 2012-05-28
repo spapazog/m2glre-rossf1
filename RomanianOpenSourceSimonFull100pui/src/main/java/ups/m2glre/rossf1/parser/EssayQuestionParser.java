@@ -5,8 +5,17 @@ import org.jdom.Element;
 import ups.m2glre.rossf1.question.EssayQuestion;
 import ups.m2glre.rossf1.utils.MoodleXML;
 
+/**
+ * Essay Question Parser.
+ *
+ */
 public class EssayQuestionParser extends QuestionParser {
 
+    /**
+     * Parser of the specialized nodes for EssayQuestion
+     * @param questionElement node element of the question
+     * @throws exception if the format of the XML is not valid
+     */
     public void parseSpecializedQuestion(Element questionXML)
             throws Throwable {
         EssayQuestion q = (EssayQuestion) question;

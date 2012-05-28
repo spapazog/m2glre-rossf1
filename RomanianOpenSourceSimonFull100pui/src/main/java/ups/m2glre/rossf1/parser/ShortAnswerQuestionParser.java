@@ -31,9 +31,16 @@ import ups.m2glre.rossf1.utils.ParserUtil;
     </question>
  */
 public class ShortAnswerQuestionParser extends QuestionParser  {
-
+    /**
+     * ShortAnswerQuestion object representation.
+     */
     private ShortAnswerQuestion shortAnswerQuestion;
 
+    /**
+     * Parser of the specialized nodes for ShortAnswerQuestion
+     * @param questionElement node element of the question
+     * @throws exception if the format of the XML is not valid
+     */
     @Override
     public final void parseSpecializedQuestion(Element questionElement)
             throws InvalidQuizFormatException {

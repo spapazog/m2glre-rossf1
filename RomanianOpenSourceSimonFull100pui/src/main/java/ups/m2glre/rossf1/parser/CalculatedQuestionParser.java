@@ -13,10 +13,21 @@ import ups.m2glre.rossf1.question.internal.Unit;
 import ups.m2glre.rossf1.utils.MoodleXML;
 import ups.m2glre.rossf1.utils.ParserUtil;
 
+/**
+ * Calculated Question Parser.
+ *
+ */
 public class CalculatedQuestionParser extends QuestionParser  {
-
+    /**
+     * CalculatedQuestion object representation.
+     */
     private CalculatedQuestion calculatedQuestion;
 
+    /**
+     * Parser of the specialized nodes for CalculatedQuestion.
+     * @param questionElement node element of the question
+     * @throws exception if the format of the XML is not valid
+     */
     @Override
     public final void parseSpecializedQuestion(Element questionElement)
             throws Throwable {
