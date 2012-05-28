@@ -6,7 +6,7 @@ import java.util.List;
 import ups.m2glre.rossf1.question.internal.DataSetDefinition;
 import ups.m2glre.rossf1.question.internal.Unit;
 
-/** 
+/**
  * Calculated question model.
  */
 public class CalculatedQuestion extends GenericQuestion {

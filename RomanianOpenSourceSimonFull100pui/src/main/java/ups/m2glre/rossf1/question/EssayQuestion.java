@@ -1,9 +1,9 @@
 package ups.m2glre.rossf1.question;
 
-/** 
+/**
  * Essay question model.
  * @author gabriel
- * 
+ *
  */
 public class EssayQuestion extends GenericQuestion {
 

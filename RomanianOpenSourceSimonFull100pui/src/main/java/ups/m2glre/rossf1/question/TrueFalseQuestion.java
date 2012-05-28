@@ -5,7 +5,7 @@ import java.util.List;
 
 import ups.m2glre.rossf1.question.internal.Answer;
 
-/** 
+/**
  * TrueFalseQuestion model.
  */
 public class TrueFalseQuestion extends GenericQuestion {

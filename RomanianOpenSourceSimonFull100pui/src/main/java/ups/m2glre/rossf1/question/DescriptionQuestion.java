@@ -1,6 +1,6 @@
 package ups.m2glre.rossf1.question;
 
-/** 
+/**
  * Description question model.
  */
 public class DescriptionQuestion extends GenericQuestion {
