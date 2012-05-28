@@ -14,7 +14,6 @@ import ups.m2glre.rossf1.utils.ParserUtil;
  *
  */
 public class NumericalQuestionParser extends QuestionParser {
-    
     /**
      * Parser of the specialized nodes for NumericalQuestionQuestion
      * @param questionElement node element of the question

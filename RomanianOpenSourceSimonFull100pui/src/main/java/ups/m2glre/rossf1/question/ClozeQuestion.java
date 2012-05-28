@@ -1,5 +1,8 @@
 package ups.m2glre.rossf1.question;
 
+/** 
+ * Cloze question model.
+ */
 public class ClozeQuestion extends GenericQuestion {
 
     private boolean answerShuffle;

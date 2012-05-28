@@ -2,6 +2,9 @@ package ups.m2glre.rossf1.question;
 
 import ups.m2glre.rossf1.question.internal.Unit;
 
+/** 
+ * Numerical question model.
+ */
 public class NumericalQuestion extends GenericQuestion {
     private int answerFraction;
     private int answerValue;

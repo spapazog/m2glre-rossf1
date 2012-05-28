@@ -2,7 +2,8 @@ package ups.m2glre.rossf1.question;
 
 import java.util.HashMap;
 
-/** Matching question model
+/** 
+ * Matching question model.
  */
 
 public class MatchingQuestion extends GenericQuestion {

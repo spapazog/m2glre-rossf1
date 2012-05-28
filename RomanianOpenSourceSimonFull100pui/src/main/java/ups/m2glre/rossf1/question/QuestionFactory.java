@@ -5,8 +5,19 @@ import org.jdom.Element;
 import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 import ups.m2glre.rossf1.utils.MoodleXML;
 
+/**
+ * Question model factory.
+ * @author gabriel
+ *
+ */
 public class QuestionFactory {
 
+    /**
+     * Getting the matched question instance based on the question type.
+     * @param questionXML node element of the question
+     * @return the Question instance
+     * @throws Exception if the question type is not selected
+     */
     public static GenericQuestion getQuestion(Element questionXML)
             throws Exception {
         switch (getQuestionType(questionXML)) {

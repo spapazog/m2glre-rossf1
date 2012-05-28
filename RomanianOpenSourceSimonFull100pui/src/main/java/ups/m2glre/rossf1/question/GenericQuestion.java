@@ -8,6 +8,7 @@ import universite.toulouse.moodlexmlapi.core.data.QuestionText;
 import universite.toulouse.moodlexmlapi.core.data.QuestionType;
 
 /**
+ * Generic Question Model
  * @author steeepph
  */
 public abstract class GenericQuestion implements Question  {

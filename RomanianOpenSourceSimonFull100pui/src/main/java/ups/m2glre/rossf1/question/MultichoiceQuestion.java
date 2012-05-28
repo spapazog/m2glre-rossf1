@@ -6,7 +6,7 @@ import java.util.List;
 import ups.m2glre.rossf1.question.internal.Answer;
 
 /**
-*
+* Multichoice Question model.
 * @author Simon Joussellin
 *
 **/

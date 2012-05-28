@@ -5,7 +5,8 @@ import java.util.List;
 
 import ups.m2glre.rossf1.question.internal.Answer;
 
-/** ShortAnswerQuestion model
+/** 
+ * ShortAnswerQuestion model.
  */
 public class ShortAnswerQuestion extends GenericQuestion {
 
