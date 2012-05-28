@@ -22,7 +22,9 @@ public class EssayQuestionWriter extends QuestionWriter {
         answer.setAttribute(new Attribute(MoodleXML.TAG_FRACTION,
                 String.valueOf(q.getAnswerFraction())));
         Element feedback = new Element(MoodleXML.TAG_FEEDBACK);
-        feedback.setText(q.getAnswerText());
+        Element feedbackText = new Element(MoodleXML.TAG_TEXT);
+        feedbackText.setText(q.getAnswerText());
+        feedback.addContent(feedbackText);
         answer.addContent(feedback);
         questionXML.addContent(answer);
     }

@@ -1,8 +1,6 @@
 package ups.m2glre.rossf1.quiz;
 
 import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
 
 import junit.framework.TestCase;
@@ -14,7 +12,7 @@ public class ImportExportTest extends TestCase {
         quizService = new QuizServiceImpl();
     }
 
-    public void testImportQuiz() {
+    public void testImportQuizFull() {
         try {
             ImportedQuizImpl quiz = (ImportedQuizImpl) quizService.importQuiz(new FileInputStream("src/test/TestFull.xml"));
             assertEquals(10, quiz.getExtractedQuestionCount());
@@ -25,9 +23,9 @@ public class ImportExportTest extends TestCase {
         }
     }
 
-    public void testImportQuiz2() {
+    public void testImportQuiz() {
         try {
-            FileInputStream is = new FileInputStream("src/test/TestQuiz2.xml");
+            FileInputStream is = new FileInputStream("src/test/TestQuiz.xml");
             ImportedQuizImpl quiz = (ImportedQuizImpl) quizService.importQuiz(is);
             assertEquals(26, quiz.getExtractedQuestionCount());
         } catch (Exception e) {
@@ -36,60 +34,35 @@ public class ImportExportTest extends TestCase {
         }
     }
 
-    public void testImportExportQuiz1() {
+    public void testImportExportQuiz() {
         try {
-            FileInputStream is = new FileInputStream("src/test/TestFull.xml");
-            ImportedQuizImpl quiz = (ImportedQuizImpl) quizService.importQuiz(is);
-            assertEquals(10, quiz.getExtractedQuestionCount());
-
-            // open streams
-            FileInputStream is2 = new FileInputStream("src/test/TestFull.xml");
-            OutputStream os = quizService.exportQuiz(quiz);
-            os.close();
-            FileInputStream isRes = new FileInputStream("target/export.xml");
-
-            assertEquals(is2.available(), isRes.available());
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            fail();
-        }
-    }
-
-    public void testImportExportQuiz2() {
-        try {
-            FileInputStream is = new FileInputStream("src/test/TestQuiz2.xml");
+            /*
+             * Test import de quiz à partir d'un fichier
+             */
+            FileInputStream is = new FileInputStream("src/test/TestQuiz.xml");
             ImportedQuizImpl quiz = (ImportedQuizImpl) quizService.importQuiz(is);
             assertEquals(26, quiz.getExtractedQuestionCount());
 
-            // open streams
-            FileInputStream is2 = new FileInputStream("src/test/TestQuiz2.xml");
+            /*
+             * Test d'export de quiz
+             */
+            //Ouverture du fichier pour enregistrement dans Quiz
+            is = new FileInputStream("src/test/TestQuiz.xml");
+            quiz = (ImportedQuizImpl) quizService.importQuiz(is);
+            //Création du fichier exporté (export.xml) à partir du quiz importé
             OutputStream os = quizService.exportQuiz(quiz);
             os.close();
+            //Ré-ouveture du fichier crée
             FileInputStream isRes = new FileInputStream("target/export.xml");
+            quiz = (ImportedQuizImpl) quizService.importQuiz(isRes);
+            //Vérification du nombre de question
+            assertEquals(26, quiz.getExtractedQuestionCount());
 
-            assertEquals(is2.available(), isRes.available());
+            //assertEquals(is2.available(), isRes.available());
 
         } catch (Exception e) {
             e.printStackTrace();
             fail();
         }
     }
-
-    /*private void compareStream(InputStream is, InputStream isRes) {
-        byte[] bufferIs = new byte[100];
-        byte[] bufferIsRes = new byte[100];
-
-        try {
-            while ((is.read(bufferIs) == 100) && (isRes.read(bufferIsRes) == 100)) {
-                for (int i = 0 ; i < 100 ; i++) {
-                    if (bufferIs[i] != bufferIsRes[i])
-                        fail("Different buffer content "+bufferIs[i]+ bufferIsRes[i]);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-            fail(e.getMessage());
-        }
-    }*/
 }
