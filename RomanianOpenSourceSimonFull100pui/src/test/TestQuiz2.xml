@@ -1,0 +1,2039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+
+<!-- question: 135  -->
+  <question type="essay">
+    <name><text>Titre Q20</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{DA111AE8-9979-4510-980E-9D237FE213AC}">Question énoncé autocorrigé où trois réponses sont attendues sur une possibilité de 10. Trois champs de réponses automatiquement créés.</P>
+ <P>Nommez trois provinces canadiennes :</P>
+ <P>&nbsp;<SPAN id=5065CF4E-40DE-4E72-8506-F1A65E9D4C6F contentEditable=false ID3QAnswerFieldGUID="5065CF4E-40DE-4E72-8506-F1A65E9D4C6F"></SPAN></P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+<answer fraction="0">
+    <feedback format="moodle_auto_format">
+<text></text>    </feedback>
+</answer>
+</question>
+
+
+
+<!-- question: 136  -->
+  <question type="essay">
+    <name><text>Titre Q21</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{CF5ACFE2-DE68-4942-80E2-FD45CF9C1EB9}">&nbsp;Disposition horizontale</P>
+ <P>Nommez trois provinces canadiennes :</P>
+ <P>&nbsp;<SPAN id=C0416B8F-E43B-4108-8BBE-CD3429457641 contentEditable=false ID3QAnswerFieldGUID="C0416B8F-E43B-4108-8BBE-CD3429457641"></SPAN></P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+<answer fraction="0">
+    <feedback format="moodle_auto_format">
+<text></text>    </feedback>
+</answer>
+</question>
+
+
+
+<!-- question: 137  -->
+  <question type="essay">
+    <name><text>Titre Q22</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{E2FB9830-F4C8-4F67-A1BB-E878C5B68E3F}">&nbsp;Correction par mots clés - On donne des points pour chaque mot clé dans le texte saisi par l'étudiant.</P>
+ <P>Rédigez un court texte, dans lequel vous décrirez trois&nbsp;provinces Canadienne. Inspirez-vous de vos voyages, lectures, documentaires, etc.</P>
+ <P>&nbsp;<SPAN id=47EA292B-4261-4048-A999-ABA48A71F184 contentEditable=false ID3QAnswerFieldGUID="47EA292B-4261-4048-A999-ABA48A71F184"></SPAN></P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>10.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+<answer fraction="0">
+    <feedback format="moodle_auto_format">
+<text></text>    </feedback>
+</answer>
+</question>
+
+
+
+<!-- question: 138  -->
+  <question type="matching">
+    <name><text>Titre Q25</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>&nbsp;Question appariement avec l'affichage par défaut «bouton radio et légende».</P>
+ <P>Associez chacune&nbsp;des capitales avec son pays.</P>
+ <P><SPAN id=39866212-CD52-41C7-B790-942845F9FDBC contentEditable=false ID3QAnswerFieldGUID="39866212-CD52-41C7-B790-942845F9FDBC"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+<subquestion format="html">
+<text>Canada</text><answer><text>Ottawa</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>France</text><answer><text>Paris</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>Angleterre</text><answer><text>Londres</text></answer>
+</subquestion>
+</question>
+
+
+
+<!-- question: 139  -->
+  <question type="matching">
+    <name><text>Titre Q26</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{558706A7-3C61-4CB5-AA76-5694C3260321}">Question appariement avec l'affichage par défaut «bouton radio et légende», l'ordre aléatoire et la sélection (2/3)&nbsp;des options (capitales) et des propositions (pays)&nbsp;sont activés. </P>
+ <P GUID="{558706A7-3C61-4CB5-AA76-5694C3260321}">Associez chacune&nbsp;des capitales avec son pays.</P>
+ <P><SPAN id=DD6482ED-6E58-497E-9DDA-B8A1DDDA745B contentEditable=false ID3QAnswerFieldGUID="DD6482ED-6E58-497E-9DDA-B8A1DDDA745B"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+<subquestion format="html">
+<text>Canada</text><answer><text>Ottawa</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>France</text><answer><text>Paris</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>Angleterre</text><answer><text>Londres</text></answer>
+</subquestion>
+</question>
+
+
+
+<!-- question: 140  -->
+  <question type="matching">
+    <name><text>Titre Q27</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{1186B211-3724-4E26-991A-81D545991783}">Question appariement avec l'affichage «liste déroulante et légende»</P>
+ <P GUID="{1186B211-3724-4E26-991A-81D545991783}">Associez chacune&nbsp;des capitales avec son pays.</P>
+ <P><SPAN id=0305A43D-872A-4CF4-9ACE-8720D8543654 contentEditable=false ID3QAnswerFieldGUID="0305A43D-872A-4CF4-9ACE-8720D8543654"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+<subquestion format="html">
+<text>Canada</text><answer><text>Ottawa</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>France</text><answer><text>Paris</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>Angleterre</text><answer><text>Londres</text></answer>
+</subquestion>
+</question>
+
+
+
+<!-- question: 141  -->
+  <question type="matching">
+    <name><text>Titre Q28</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{02E3CF84-2306-4314-B542-7C807931EA4E}">Question appariement avec l'affichage «bouton radio»</P>
+ <P GUID="{02E3CF84-2306-4314-B542-7C807931EA4E}">Associez chacune&nbsp;des capitales avec son pays. </P>
+ <P><SPAN id=D479B033-4E5B-4C2D-89B2-DD7F7EDC3043 contentEditable=false ID3QAnswerFieldGUID="D479B033-4E5B-4C2D-89B2-DD7F7EDC3043"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+<subquestion format="html">
+<text>Canada</text><answer><text>Ottawa</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>France</text><answer><text>Paris</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>Angleterre</text><answer><text>Londres</text></answer>
+</subquestion>
+</question>
+
+
+
+<!-- question: 142  -->
+  <question type="matching">
+    <name><text>Titre Q29</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{02E3CF84-2306-4314-B542-7C807931EA4E}">Question appariement avec l'affichage «liste déroulante»&nbsp;&nbsp;</P>
+ <P GUID="{02E3CF84-2306-4314-B542-7C807931EA4E}">Associez chacune&nbsp;des capitales avec son pays. </P>
+ <P><SPAN id=D672604B-C518-42EE-B82F-56C40C5E41A5 contentEditable=false ID3QAnswerFieldGUID="D672604B-C518-42EE-B82F-56C40C5E41A5"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+<subquestion format="html">
+<text>Canada</text><answer><text>Ottawa</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>France</text><answer><text>Paris</text></answer>
+</subquestion>
+<subquestion format="html">
+<text>Angleterre</text><answer><text>Londres</text></answer>
+</subquestion>
+</question>
+
+
+
+<!-- question: 117  -->
+  <question type="multichoice">
+    <name><text>Titre Q1</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Choix unique</P>
+ <P GUID="{5CFF016D-380C-4386-89FA-0CFC0EC42EB3}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=AB5911FF-22D4-42AE-BF81-33FC0C07ACD3 contentEditable=false ID3QAnswerFieldGUID="AB5911FF-22D4-42AE-BF81-33FC0C07ACD3"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 126  -->
+  <question type="multichoice">
+    <name><text>Titre Q10 - commentaires formatifs</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{1CED521A-77C2-4D14-8F29-8CDB657B03E7}">Choix unique avec commentaires formatifs selon la note obtenue à la question. La numérotation des options est en&nbsp;chiffre arabe et peut aussi être en lettres majuscules.</P>
+ <P GUID="{5CFF016D-380C-4386-89FA-0CFC0EC42EB3}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=03E20DB0-3F7C-4540-8EAC-C4C6BBB7075C contentEditable=false ID3QAnswerFieldGUID="03E20DB0-3F7C-4540-8EAC-C4C6BBB7075C"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<P>&nbsp;Bravo !</P>]]></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<P>&nbsp;Mauvaise réponse.</P>]]></text>    </incorrectfeedback>
+    <answernumbering>123</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 127  -->
+  <question type="multichoice">
+    <name><text>Titre Q11 - commentaires formatifs</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Choix unique avec commentaires formatifs&nbsp;selon la note obtenue à la question ainsi qu'une rétroaction à chaque option de réponse. </P>
+ <P GUID="{5CFF016D-380C-4386-89FA-0CFC0EC42EB3}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=AB0CD3F9-6634-4403-8313-E5E8007A3969 contentEditable=false ID3QAnswerFieldGUID="AB0CD3F9-6634-4403-8313-E5E8007A3969"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<P>&nbsp;Bravo !</P>]]></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<P>&nbsp;Il faut réviser votre géographie.</P>]]></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 128  -->
+  <question type="multichoice">
+    <name><text>Titre Q12</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>&nbsp;Choix multiple</P>
+ <P>Dans cette liste, identifiez&nbsp;les villes françaises :</P>
+ <P><SPAN id=3723A656-06ED-4AD6-B083-162FE6034277 contentEditable=false ID3QAnswerFieldGUID="3723A656-06ED-4AD6-B083-162FE6034277"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="25">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Londres
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Berlin
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Rome
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Genève
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Madrid
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Washington
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+St-Tropez
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 129  -->
+  <question type="multichoice">
+    <name><text>Titre Q13</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>&nbsp;Choix multiple avec positionnement et sélection (7 sur 10) aléatoires, dont une option a une position fixe et la sélection forcée.</P>
+ <P>Dans cette liste, identifiez&nbsp;les villes françaises :</P>
+ <P><SPAN id=C8A04D0B-1FC8-4DE5-93F3-0A2B356FF8C4 contentEditable=false ID3QAnswerFieldGUID="C8A04D0B-1FC8-4DE5-93F3-0A2B356FF8C4"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>123</answernumbering>
+      <answer fraction="25">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Londres
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Berlin
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Rome
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Genève
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Madrid
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Washington
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+St-Tropez
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 130  -->
+  <question type="multichoice">
+    <name><text>Titre Q14</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>&nbsp;Mode de correction automatique</P>
+ <P>Dans cette liste, identifiez&nbsp;les villes françaises :</P>
+ <P><SPAN id=CFB7B253-F86B-4DAE-A289-86E3E252E14A contentEditable=false ID3QAnswerFieldGUID="CFB7B253-F86B-4DAE-A289-86E3E252E14A"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>123</answernumbering>
+      <answer fraction="25">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Londres
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Berlin
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Rome
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Genève
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Madrid
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Washington
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+St-Tropez
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 131  -->
+  <question type="multichoice">
+    <name><text>Titre Q15</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Mode de correction calculé (pondération de 10 points)</P>
+ <P>Dans cette liste, identifiez&nbsp;trois&nbsp;villes françaises :</P>
+ <P><SPAN id=12722B21-F9E9-47B9-927C-BA4FBAB054A7 contentEditable=false ID3QAnswerFieldGUID="12722B21-F9E9-47B9-927C-BA4FBAB054A7"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>10.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>123</answernumbering>
+      <answer fraction="33.33333">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Londres
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="33.33333">
+        <text>
+Aix-en-Provences
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Rome
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Barcelone
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Madrid
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Washington
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="33.33333">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Montréal
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Berlin
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 132  -->
+  <question type="multichoice">
+    <name><text>Titre Q16</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Mode non corrigé (donc pas de pointage)</P>
+ <P>Parmi ces villes françaises, lesquelles&nbsp;visiterez-vous&nbsp;lors de vos prochaines vacances :</P>
+ <P><SPAN id=3FFAB636-9071-48A1-9B31-299A223EB7EA contentEditable=false ID3QAnswerFieldGUID="3FFAB636-9071-48A1-9B31-299A223EB7EA"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>123</answernumbering>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Larochelle
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aix-en-Provences
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Èze
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Cannes
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Nice
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Grasse
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+St-Tropez
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 133  -->
+  <question type="multichoice">
+    <name><text>Titre Q17</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{FA7783DA-60B0-467C-B6C2-4F4B17E29F82}">Mode de correction limité&nbsp;(il faut choisir 3 bonnes options sur 4 pour avoir la totalité des points)</P>
+ <P>Dans cette liste, identifiez&nbsp;trois&nbsp;villes françaises :</P>
+ <P><SPAN id=88795449-BFB7-4586-A10F-C3E50E38AF5D contentEditable=false ID3QAnswerFieldGUID="88795449-BFB7-4586-A10F-C3E50E38AF5D"></SPAN>&nbsp;</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>3.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>123</answernumbering>
+      <answer fraction="25">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Londres
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Aix-en-Provences
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Rome
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Barcelone
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Madrid
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Washington
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Montréal
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+St-Tropez
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 134  -->
+  <question type="multichoice">
+    <name><text>Titre Q18</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{656687B9-3B16-4C6D-AAEC-86FE9E2FD702}">La pondération&nbsp;(/4)&nbsp;de cette question ne s'affiche pas dans la marge.</P>
+ <P>Dans cette liste, identifiez&nbsp;les villes françaises :</P>
+ <P><SPAN style="WIDTH: 597px; HEIGHT: 253px" id=DD726B89-BE40-43CB-B518-6D497D09E10B contentEditable=false ID3QAnswerFieldGUID="DD726B89-BE40-43CB-B518-6D497D09E10B"></SPAN>&nbsp;&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<P>&nbsp;Bravo ! cette notion est bien maîtrisée.</P>]]></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<P>&nbsp;Mauvaise réponse,&nbsp; il faut réviser cette notion.</P>]]></text>    </incorrectfeedback>
+    <answernumbering>123</answernumbering>
+      <answer fraction="25">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Londres
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Berlin
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Rome
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Genève
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Madrid
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Washington
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="25">
+        <text>
+St-Tropez
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 118  -->
+  <question type="multichoice">
+    <name><text>Titre Q2</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Choix unique avec positionnement aléatoire des options</P>
+ <P GUID="{5CFF016D-380C-4386-89FA-0CFC0EC42EB3}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=1871CCD5-10C9-4CA3-B3B6-D58CD6DFCCDA contentEditable=false ID3QAnswerFieldGUID="1871CCD5-10C9-4CA3-B3B6-D58CD6DFCCDA"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 119  -->
+  <question type="multichoice">
+    <name><text>Titre Q3</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Choix unique avec&nbsp;sélection aléatoire des options (afficher 3 options sur 5)</P>
+ <P GUID="{5CFF016D-380C-4386-89FA-0CFC0EC42EB3}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=E227F3E9-F9CC-44C2-8342-AA17FCF71E89 contentEditable=false ID3QAnswerFieldGUID="E227F3E9-F9CC-44C2-8342-AA17FCF71E89"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 120  -->
+  <question type="multichoice">
+    <name><text>Titre Q4</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Choix unique avec&nbsp;positionnement et sélection aléatoire des options (afficher 3 options sur 5)</P>
+ <P GUID="{5CFF016D-380C-4386-89FA-0CFC0EC42EB3}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=7B82F344-0AC6-4F41-9333-BBD55D0A5ED1 contentEditable=false ID3QAnswerFieldGUID="7B82F344-0AC6-4F41-9333-BBD55D0A5ED1"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 121  -->
+  <question type="multichoice">
+    <name><text>Titre Q5</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Choix unique avec positionnement aléatoire des options et une option fixe</P>
+ <P GUID="{5CFF016D-380C-4386-89FA-0CFC0EC42EB3}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=7630FB4A-7C74-4A65-8AB1-14B91274A628 contentEditable=false ID3QAnswerFieldGUID="7630FB4A-7C74-4A65-8AB1-14B91274A628"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 122  -->
+  <question type="multichoice">
+    <name><text>Titre Q6</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{28ED0905-E593-419C-B064-1F6F5B2704D5}">Disposition sur&nbsp;x colonnes</P>
+ <P GUID="{28ED0905-E593-419C-B064-1F6F5B2704D5}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=B157397E-E401-4F11-88F6-69DD47CE0211 contentEditable=false ID3QAnswerFieldGUID="B157397E-E401-4F11-88F6-69DD47CE0211"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Millau
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Victoria
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aix en Provence
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 123  -->
+  <question type="multichoice">
+    <name><text>Titre Q7 - V ou F</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Le type vrai ou faux est un simple choix unique à deux options.</P>
+ <P>Paris est la capitale de la France.</P>
+ <P GUID="{8522FE13-1281-4855-AFFC-3A7100DC75E6}"><SPAN id=9A0D2330-227C-4270-85DA-9FDFE0B4910D contentEditable=false ID3QAnswerFieldGUID="9A0D2330-227C-4270-85DA-9FDFE0B4910D"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>0</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Vrai
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Faux
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 124  -->
+  <question type="multichoice">
+    <name><text>Titre Q8 - Liste</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P GUID="{A57BAE39-5494-44B5-927A-915142415445}">Choix unique&nbsp;avec une interface «Liste» - plutôt inutile</P>
+ <P GUID="{A57BAE39-5494-44B5-927A-915142415445}">Quelle est la capitale de la France ?</P>
+ <P GUID="{7CDA01C5-4FFD-413D-ACF3-DB1B8CE97E01}"><SPAN id=26029566-22BE-4F80-9629-1B03223CFBB0 contentEditable=false ID3QAnswerFieldGUID="26029566-22BE-4F80-9629-1B03223CFBB0"></SPAN>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Millau
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Victoria
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aix en Provence
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Aucune de ces réponses
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+
+<!-- question: 125  -->
+  <question type="multichoice">
+    <name><text>Titre Q9 - menu déroulant</text></name>
+    <questiontext format="moodle_auto_format">
+<text><![CDATA[<P>Interface menu déroulant (avec choix unique)</P>
+ <P GUID="{61AC3FD0-E818-40B6-B676-2EDB2464B47D}">La capitale de la France est <SPAN id=A601E8D9-EF91-4D0E-8DC3-BD621A716538 contentEditable=false ID3QAnswerFieldGUID="A601E8D9-EF91-4D0E-8DC3-BD621A716538"></SPAN>.</P>
+ <P>&nbsp;</P>]]></text>    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+<text></text>    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>1</shuffleanswers>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="moodle_auto_format">
+      <text></text>    </correctfeedback>
+    <partiallycorrectfeedback format="moodle_auto_format">
+      <text></text>    </partiallycorrectfeedback>
+    <incorrectfeedback format="moodle_auto_format">
+      <text></text>    </incorrectfeedback>
+    <answernumbering>abc</answernumbering>
+      <answer fraction="100">
+        <text>
+Paris
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Tolède
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Marseille
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Lyon
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+      <answer fraction="0">
+        <text>
+Bruxelles
+        </text>
+      <feedback format="moodle_auto_format">
+          <text>
+
+          </text>
+      </feedback>
+    </answer>
+</question>
+
+
+</quiz>
